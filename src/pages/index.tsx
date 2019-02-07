@@ -1,26 +1,47 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
-
-import Layout from '../components/layout';
-import Image from '../components/image';
+import styled from 'styled-components';
+import HarperElf1 from '../assets/images/IMG_0012.jpeg';
 
 interface Props {
-};
+}
 
 class IndexPage extends React.Component<Props> {
   render() {
     return (
-      <Layout>
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-          <Image/>
-        </div>
-        <Link to="/page-2/">Go to page 2</Link>
-      </Layout>
+      <PageWrapper>
+        <h1>Coming soon.</h1>
+        <h3>Our elves are currently hard at work!</h3>
+        <img src={HarperElf1} alt="harper-elf-1" draggable={false}/>
+      </PageWrapper>
     );
   }
 }
 
 export default IndexPage;
+
+const PageWrapper = styled.div`
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  h1 {
+    font-family: Montserrat sans-serif;
+  }
+  
+  img {
+    margin-top: 2rem;
+    max-width: 600px;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+    cursor: pointer;
+  
+    &:active {
+      box-shadow: 0 0 80px 20px rgba(0, 0, 0, 0.4);
+      transform: scale(0.95) rotate(3deg);
+    }
+  
+  }
+`;
