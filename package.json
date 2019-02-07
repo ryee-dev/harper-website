@@ -49,6 +49,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "devDependencies": {
+    "eslint-plugin-react": "^7.12.4",
     "prettier": "^1.16.4",
     "stylelint": "^9.10.1",
     "stylelint-config-prettier": "^4.0.0",
@@ -59,6 +60,7 @@
     "tslint": "^5.12.1",
     "tslint-config-airbnb": "^5.11.1",
     "tslint-config-prettier": "^1.18.0",
+    "tslint-loader": "^3.5.4",
     "tslint-plugin-prettier": "^2.0.1"
   }
 }

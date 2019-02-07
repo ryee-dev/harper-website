@@ -1,8 +1,7 @@
-import React from 'react';
+import * as React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import { GlobalStyle } from '../theme/globalStyle';
 
-const Layout = ({ children }) => (
+const Layout = ({ children }: { children: any }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -15,7 +14,6 @@ const Layout = ({ children }) => (
     `}
     render={() => (
       <>
-        <GlobalStyle />
         <main>{children}</main>
       </>
     )}

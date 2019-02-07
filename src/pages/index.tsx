@@ -28,7 +28,7 @@ const PageWrapper = styled.div`
   flex-direction: column;
 
   img {
-    margin-top: 2rem;
+    margin-top: 3rem;
     //max-width: 600px;
     max-height: 600px;
     box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3);
