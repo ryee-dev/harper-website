@@ -15,10 +15,8 @@ const Layout = ({ children }) => (
     `}
     render={() => (
       <>
-        <GlobalStyle/>
-        <main>
-          {children}
-        </main>
+        <GlobalStyle />
+        <main>{children}</main>
       </>
     )}
   />
