@@ -3,9 +3,9 @@ import Masonry from 'react-masonry-component';
 import styled from 'styled-components';
 import HarperElf1 from '../assets/images/IMG_0011.jpeg';
 import HarperElf2 from '../assets/images/IMG_0012.jpeg';
-import HarperElf3 from '../assets/images/IMG_0013.jpeg';
-import HarperElf4 from '../assets/images/IMG_0014.jpeg';
-import HarperElf5 from '../assets/images/IMG_0015.jpeg';
+// import HarperElf3 from '../assets/images/IMG_0013.jpeg';
+// import HarperElf4 from '../assets/images/IMG_0014.jpeg';
+// import HarperElf5 from '../assets/images/IMG_0015.jpeg';
 
 const MasonryOptions = {
   fitWidth: true,
@@ -26,24 +26,6 @@ const HarperMasonry = () => (
           alt="harper-elf-2"
           draggable={false}
         />
-        {/*<img*/}
-          {/*src={HarperElf3}*/}
-          {/*alt="harper-elf-3"*/}
-          {/*draggable={false}*/}
-          {/*className="size-3"*/}
-        {/*/>*/}
-        {/*<img*/}
-          {/*src={HarperElf4}*/}
-          {/*alt="harper-elf-4"*/}
-          {/*draggable={false}*/}
-          {/*className="size-1"*/}
-        {/*/>*/}
-        {/*<img*/}
-          {/*src={HarperElf5}*/}
-          {/*alt="harper-elf-5"*/}
-          {/*draggable={false}*/}
-          {/*className="size-2"*/}
-        {/*/>*/}
       </Masonry>
     </MasonryWrapper>
   </>
