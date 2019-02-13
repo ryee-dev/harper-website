@@ -5,6 +5,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
+import posed from 'react-pose';
 import 'react-vertical-timeline-component/style.min.css';
 import AprilImg1 from '../assets/images/april_2018/IMG_0179.jpg';
 import AprilImg2 from '../assets/images/april_2018/IMG_0218.jpeg';
@@ -83,6 +84,12 @@ const TimelineElement = styled(VerticalTimelineElement)`
     }
   }
 `;
+
+const PosedTimelineElement = posed(TimelineElement)({
+  pressable: true,
+  init: { scale: 1 },
+  press: { scale: 0.8 },
+});
 
 const LeftTimelineElement = styled(TimelineElement)`
   .vertical-timeline-element-content {
