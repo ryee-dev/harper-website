@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import Masonry from 'react-masonry-component';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -13,29 +12,11 @@ import {
   BottleIcon,
   PacifierIcon,
 } from '../assets/icons';
-
-const MasonryOptions = {
-  fitWidth: true,
-  gap: 10,
-};
+import Image from './Image';
+import TimelineApril from './timeline-events/TimelineApril';
 
 const HarperTimeline = () => {
   const [isLoaded, setLoadedState] = useState(null);
-  const data = useStaticQuery(graphql`
-    query TimelineQuery {
-      allFile(
-        filter: { relativeDirectory: { eq: "assets/images/april_2018" } }
-      ) {
-        edges {
-          node {
-            name
-            publicURL
-          }
-        }
-      }
-    }
-  `);
-
   useEffect(() => {
     // @ts-ignore
     setLoadedState(false);
@@ -53,41 +34,21 @@ const HarperTimeline = () => {
         iconStyle={{ background: '#f1eb9a', color: '#fff' }}
         icon={<img src={NewbornIcon} alt="newborn" />}
       >
-        {/*{isLoaded && (*/}
-        {/*<Masonry*/}
-        {/*onImagesLoaded={handleImagesLoaded}*/}
-        {/*options={MasonryOptions}*/}
-        {/*style={{ margin: '0 auto' }}*/}
-        {/*>*/}
-        {/*{data.allFile.edges.map(({ node }) => (*/}
-        {/*<img src={`${node.publicURL}`} alt={node.name} />*/}
-        {/*))}*/}
-        {/*</Masonry>*/}
-        {/*)}*/}
-
-        <Masonry
-          onImagesLoaded={handleImagesLoaded}
-          options={MasonryOptions}
-          style={{ margin: '0 auto' }}
-        >
-          {data.allFile.edges.map(({ node }) => (
-            <img src={`${node.publicURL}`} alt={node.name} />
-          ))}
-        </Masonry>
+        <TimelineApril />
       </LeftTimelineElement>
       <RightTimelineElement
         date="May 2018"
         iconStyle={{ background: '#f8a978', color: '#fff' }}
         icon={<img src={NappyIcon} alt="nappy" />}
       >
-        <p>test</p>
+        <Image />
       </RightTimelineElement>
       <LeftTimelineElement
         date="June 2018"
         iconStyle={{ background: '#a4f6a5', color: '#fff' }}
         icon={<img src={BottleIcon} alt="bottle" />}
       >
-        <p>test</p>
+        {/*<AlbumImages />*/}
       </LeftTimelineElement>
       <RightTimelineElement
         date="May 2018"
@@ -120,11 +81,11 @@ const Timeline = styled(VerticalTimeline)`
 `;
 
 const TimelineElement = styled(VerticalTimelineElement)`
-  width: 100%;
+  //width: 100%;
 
   img {
-    max-width: 200px;
-    margin: 0.5rem;
+    //max-width: 200px;
+    //margin: 0.5rem;
   }
 
   .vertical-timeline-element-icon {
@@ -147,6 +108,11 @@ const TimelineElement = styled(VerticalTimelineElement)`
 `;
 
 const LeftTimelineElement = styled(TimelineElement)`
+  img {
+    max-width: 200px;
+    margin: 0.5rem;
+  }
+
   .vertical-timeline-element-content {
     background-color: #f3f8ff;
 

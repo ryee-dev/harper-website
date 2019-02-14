@@ -6,3 +6,4 @@ declare module '*.svg';
 declare module 'react-vertical-timeline-component';
 declare module 'react-pose';
 declare module 'gatsby';
+declare module 'react-particles-js';

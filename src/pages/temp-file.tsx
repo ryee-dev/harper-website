@@ -1,26 +1,11 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 import Layout from '../components/layout';
+import AlbumImages from '../components/AlbumImages';
 
-export default ({ data }) => {
-  console.log(data);
+export default () => {
   return (
     <Layout>
-      <h1>hi</h1>
+      <AlbumImages />
     </Layout>
-  )
-}
-
-export const query = graphql`
-    query {
-        allFile {
-            edges {
-                node {
-                    name
-                    relativePath
-                    ext
-                }
-            }
-        }
-    }
-`;
+  );
+};
