@@ -1,14 +1,12 @@
-import * as React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Masonry from 'react-masonry-component';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
-import posed from 'react-pose';
 import 'react-vertical-timeline-component/style.min.css';
-import AprilImg1 from '../assets/images/april_2018/IMG_0179.jpg';
-import AprilImg2 from '../assets/images/april_2018/IMG_0218.jpeg';
 import {
   NewbornIcon,
   NappyIcon,
@@ -21,45 +19,103 @@ const MasonryOptions = {
   gap: 10,
 };
 
-const HarperTimeline = () => (
-  <Timeline>
-    <LeftTimelineElement
-      date="April 2018"
-      iconStyle={{ background: '#f1eb9a', color: '#fff' }}
-      icon={<img src={NewbornIcon} alt="newborn" />}
-    >
-      <Masonry options={MasonryOptions} style={{ margin: '0 auto' }}>
-        <img src={AprilImg1} alt="april-1" />
-        <img src={AprilImg2} alt="april-2" />
-      </Masonry>
-    </LeftTimelineElement>
-    <RightTimelineElement
-      date="May 2018"
-      iconStyle={{ background: '#f8a978', color: '#fff' }}
-      icon={<img src={NappyIcon} alt="nappy" />}
-    >
-      <p>test</p>
-    </RightTimelineElement>
-    <LeftTimelineElement
-      date="June 2018"
-      iconStyle={{ background: '#a4f6a5', color: '#fff' }}
-      icon={<img src={BottleIcon} alt="bottle" />}
-    >
-      <p>test</p>
-    </LeftTimelineElement>
-    <BlankTimelineElement
-      iconStyle={{ background: '#8ed6ff', color: '#fff' }}
-      icon={<img src={PacifierIcon} alt="pacifier" />}
-    />
-  </Timeline>
-);
+const HarperTimeline = () => {
+  const [isLoaded, setLoadedState] = useState(null);
+  const data = useStaticQuery(graphql`
+    query TimelineQuery {
+      allFile(
+        filter: { relativeDirectory: { eq: "assets/images/april_2018" } }
+      ) {
+        edges {
+          node {
+            name
+            publicURL
+          }
+        }
+      }
+    }
+  `);
+
+  useEffect(() => {
+    // @ts-ignore
+    setLoadedState(false);
+  });
+
+  function handleImagesLoaded() {
+    // @ts-ignore
+    setLoadedState(true);
+  }
+
+  return (
+    <Timeline>
+      <LeftTimelineElement
+        date="April 2018"
+        iconStyle={{ background: '#f1eb9a', color: '#fff' }}
+        icon={<img src={NewbornIcon} alt="newborn" />}
+      >
+        {/*{isLoaded && (*/}
+        {/*<Masonry*/}
+        {/*onImagesLoaded={handleImagesLoaded}*/}
+        {/*options={MasonryOptions}*/}
+        {/*style={{ margin: '0 auto' }}*/}
+        {/*>*/}
+        {/*{data.allFile.edges.map(({ node }) => (*/}
+        {/*<img src={`${node.publicURL}`} alt={node.name} />*/}
+        {/*))}*/}
+        {/*</Masonry>*/}
+        {/*)}*/}
+
+        <Masonry
+          onImagesLoaded={handleImagesLoaded}
+          options={MasonryOptions}
+          style={{ margin: '0 auto' }}
+        >
+          {data.allFile.edges.map(({ node }) => (
+            <img src={`${node.publicURL}`} alt={node.name} />
+          ))}
+        </Masonry>
+      </LeftTimelineElement>
+      <RightTimelineElement
+        date="May 2018"
+        iconStyle={{ background: '#f8a978', color: '#fff' }}
+        icon={<img src={NappyIcon} alt="nappy" />}
+      >
+        <p>test</p>
+      </RightTimelineElement>
+      <LeftTimelineElement
+        date="June 2018"
+        iconStyle={{ background: '#a4f6a5', color: '#fff' }}
+        icon={<img src={BottleIcon} alt="bottle" />}
+      >
+        <p>test</p>
+      </LeftTimelineElement>
+      <RightTimelineElement
+        date="May 2018"
+        iconStyle={{ background: '#f8a978', color: '#fff' }}
+        icon={<img src={NappyIcon} alt="nappy" />}
+      >
+        <p>test</p>
+      </RightTimelineElement>
+      <LeftTimelineElement
+        date="June 2018"
+        iconStyle={{ background: '#a4f6a5', color: '#fff' }}
+        icon={<img src={BottleIcon} alt="bottle" />}
+      >
+        <p>test</p>
+      </LeftTimelineElement>
+      <BlankTimelineElement
+        iconStyle={{ background: '#8ed6ff', color: '#fff' }}
+        icon={<img src={PacifierIcon} alt="pacifier" />}
+      />
+    </Timeline>
+  );
+};
 
 export default HarperTimeline;
 
 const Timeline = styled(VerticalTimeline)`
-  //background-color: lightgray;
   &:before {
-    background-color: lightgray;
+    background-color: #f5f5f5;
   }
 `;
 
@@ -68,11 +124,8 @@ const TimelineElement = styled(VerticalTimelineElement)`
 
   img {
     max-width: 200px;
-    margin: 0 0.5rem;
+    margin: 0.5rem;
   }
-
-  //.vertical-timeline-element-content {
-  //}
 
   .vertical-timeline-element-icon {
     display: flex;
@@ -83,13 +136,15 @@ const TimelineElement = styled(VerticalTimelineElement)`
       max-height: 45px;
     }
   }
-`;
 
-const PosedTimelineElement = posed(TimelineElement)({
-  pressable: true,
-  init: { scale: 1 },
-  press: { scale: 0.8 },
-});
+  .vertical-timeline-element-content {
+    div {
+      width: auto !important;
+      max-height: 600px;
+      overflow-y: scroll;
+    }
+  }
+`;
 
 const LeftTimelineElement = styled(TimelineElement)`
   .vertical-timeline-element-content {
