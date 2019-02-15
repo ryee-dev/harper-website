@@ -13,17 +13,6 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     {
-      resolve: 'gatsby-plugin-prefetch-google-fonts',
-      options: {
-        fonts: [
-          {
-            family: `Montserrat`,
-            variants: [`400`],
-          },
-        ],
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
@@ -42,6 +31,14 @@ module.exports = {
       options: {
         name: `november_2018`,
         path: `${__dirname}/src/assets/images/november_2018`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Montserrat'],
+        },
       },
     },
   ],
