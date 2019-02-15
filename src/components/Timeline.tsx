@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import React from 'react';
+// import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import {
   VerticalTimeline,
@@ -16,17 +16,6 @@ import Image from './Image';
 import TimelineApril from './timeline-events/TimelineApril';
 
 const HarperTimeline = () => {
-  const [isLoaded, setLoadedState] = useState(null);
-  useEffect(() => {
-    // @ts-ignore
-    setLoadedState(false);
-  });
-
-  function handleImagesLoaded() {
-    // @ts-ignore
-    setLoadedState(true);
-  }
-
   return (
     <Timeline>
       <LeftTimelineElement
@@ -84,8 +73,7 @@ const TimelineElement = styled(VerticalTimelineElement)`
   //width: 100%;
 
   img {
-    //max-width: 200px;
-    //margin: 0.5rem;
+    margin: 0.5rem;
   }
 
   .vertical-timeline-element-icon {
@@ -99,24 +87,27 @@ const TimelineElement = styled(VerticalTimelineElement)`
   }
 
   .vertical-timeline-element-content {
+    //overflow-y: scroll;
+
     div {
-      width: auto !important;
-      max-height: 600px;
-      overflow-y: scroll;
+      //max-width: 200px;
+
+      //width: auto !important;
+      //height: 600px;
+      //overflow-x: hidden;
     }
   }
 `;
 
 const LeftTimelineElement = styled(TimelineElement)`
-  img {
-    max-width: 200px;
-    margin: 0.5rem;
-  }
-
   .vertical-timeline-element-content {
     background-color: #f3f8ff;
-
     box-shadow: -10px -5px 50px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  div {
+    width: 100%;
+    max-height: 600px;
   }
 `;
 
