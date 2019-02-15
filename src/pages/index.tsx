@@ -125,6 +125,7 @@ class IndexPage extends React.Component<Props> {
 export default IndexPage;
 
 const PageWrapper = styled.div`
+  position: relative;
   padding: 2rem 4rem;
   box-sizing: border-box;
   width: 100%;
@@ -132,12 +133,14 @@ const PageWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 10;
 
   div.bubbles {
     position: fixed;
     top: 0;
     height: 100%;
     width: 100%;
+    z-index: 0;
     
     canvas {
       height: 100%;

@@ -5673,6 +5673,16 @@ google-fonts-plugin@2.0.2:
     neon-js "^1.1.2"
     path "^0.12.7"
 
+google-fonts-plugin@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/google-fonts-plugin/-/google-fonts-plugin-4.0.2.tgz#365cf24b881ac1033ea80c6c70b7dfd2c5a2c3fe"
+  integrity sha512-nhaPMEoyCJkPmys00xPrC6yFSiVQabOytpBuOzZNUXX22gpPdwmEHhaNsegoxYp/aCnbh4zZqI0DNLEdIZWuWw==
+  dependencies:
+    axios "^0.18.0"
+    find-cache-dir "^2.0.0"
+    neon-js "^1.1.2"
+    pkg-up "^2.0.0"
+
 got@^6.7.1:
   version "6.7.1"
   resolved "https://registry.yarnpkg.com/got/-/got-6.7.1.tgz#240cd05785a9a18e561dc1b44b41c763ef1e8db0"
@@ -9022,6 +9032,13 @@ pkg-dir@^3.0.0:
   integrity sha512-/E57AYkoeQ25qkxMj5PBOVgF8Kiu/h7cYS30Z5+R7WaiCCBfLq58ZI/dSeaEKb9WVJV5n/03QwrN3IeWIFllvw==
   dependencies:
     find-up "^3.0.0"
+
+pkg-up@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/pkg-up/-/pkg-up-2.0.0.tgz#c819ac728059a461cab1c3889a2be3c49a004d7f"
+  integrity sha1-yBmscoBZpGHKscOImivjxJoATX8=
+  dependencies:
+    find-up "^2.1.0"
 
 pngjs@^3.0.0:
   version "3.3.3"
