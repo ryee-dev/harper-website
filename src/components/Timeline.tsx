@@ -71,8 +71,6 @@ const Timeline = styled(VerticalTimeline)`
 `;
 
 const TimelineElement = styled(VerticalTimelineElement)`
-  //width: 100%;
-
   img {
     margin: 0.5rem;
   }
@@ -86,29 +84,23 @@ const TimelineElement = styled(VerticalTimelineElement)`
       max-height: 45px;
     }
   }
-
-  .vertical-timeline-element-content {
-    //overflow-y: scroll;
-
-    div {
-      //max-width: 200px;
-
-      //width: auto !important;
-      //height: 600px;
-      //overflow-x: hidden;
-    }
-  }
 `;
 
 const LeftTimelineElement = styled(TimelineElement)`
   .vertical-timeline-element-content {
     background-color: #f3f8ff;
     box-shadow: -10px -5px 50px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+
+    &:before {
+      border-left-color: #f3f8ff !important;
+    }
   }
 
   div {
     width: 100%;
-    max-height: 600px;
+    max-height: 500px;
+    margin-left: -5px;
   }
 `;
 
@@ -119,7 +111,8 @@ const RightTimelineElement = styled(TimelineElement)`
   }
 
   div {
-    max-height: 600px;
+    //max-height: 500px;
+    //margin-left: -5px;
   }
 
   img {
