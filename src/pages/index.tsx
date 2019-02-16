@@ -81,7 +81,7 @@ class IndexPage extends React.Component<Props> {
                   mode: 'repulse',
                 },
                 onclick: {
-                  enable: true,
+                  enable: false,
                   mode: 'bubble',
                 },
                 resize: true,
