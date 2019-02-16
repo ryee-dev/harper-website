@@ -134,6 +134,7 @@ const PageWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   z-index: 10;
+  //font-family: 'Montserrat', sans-serif;
 
   div.bubbles {
     position: fixed;
@@ -141,7 +142,7 @@ const PageWrapper = styled.div`
     height: 100%;
     width: 100%;
     z-index: 0;
-    
+
     canvas {
       height: 100%;
       width: 100%;
