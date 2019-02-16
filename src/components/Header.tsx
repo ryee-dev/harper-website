@@ -13,7 +13,7 @@ const Header = () => (
 export default Header;
 
 const HeaderWrapper = styled.div`
-  font-family: 'Montserrat', sans-serif;
+  //font-family: 'Montserrat', sans-serif;
   margin: 2rem 0;
   width: 100%;
   display: flex;

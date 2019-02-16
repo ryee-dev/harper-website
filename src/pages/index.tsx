@@ -134,7 +134,7 @@ const PageWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   z-index: 10;
-  //font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
   div.bubbles {
     position: fixed;
