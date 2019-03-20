@@ -33,8 +33,8 @@ module.exports = {
       resolve: `gatsby-source-cloudinary`,
       options: {
         cloudName: 'ryee-cloud',
-        apiKey: '486679363458553',
-        apiSecret: 'ngXoPyfG3VhN1ojLOV25rW_XQnU',
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
         resourceType: 'image',
         // type: `type Value`,
         maxResults: 300,
