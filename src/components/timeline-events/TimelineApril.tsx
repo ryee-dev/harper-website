@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';

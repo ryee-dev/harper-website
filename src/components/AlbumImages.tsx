@@ -7,15 +7,12 @@ const AlbumImages = () => (
   <StaticQuery
     query={graphql`
       query {
-        albumImages: allFile(
-          filter: { sourceInstanceName: { eq: "april_2018" } }
-        ) {
+        albumImages: allCloudinaryMedia {
           edges {
             node {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
+              url
+              public_id
+              id
               }
             }
           }
