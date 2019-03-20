@@ -125,6 +125,10 @@ class IndexPage extends React.Component<Props> {
 export default IndexPage;
 
 const PageWrapper = styled.div`
+  .vertical-timeline {
+    margin-top: 0;
+  }
+
   position: relative;
   padding: 2rem 4rem;
   box-sizing: border-box;

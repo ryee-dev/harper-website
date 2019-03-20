@@ -13,7 +13,8 @@ import {
   PacifierIcon,
 } from '../assets/icons';
 // import Image from './Image';
-import TimelineApril from './timeline-events/TimelineApril';
+// import TimelineApril from './timeline-events/TimelineApril';
+import { TimelineApril, TimelineMay, TimelineJune } from './timeline-events';
 
 const HarperTimeline = () => {
   return (
@@ -30,7 +31,7 @@ const HarperTimeline = () => {
         iconStyle={{ background: '#f8a978', color: '#fff' }}
         icon={<img src={NappyIcon} alt="nappy" />}
       >
-        <p>test</p>
+        <TimelineMay />
       </RightTimelineElement>
       <LeftTimelineElement
         date="June 2018"
@@ -38,7 +39,7 @@ const HarperTimeline = () => {
         icon={<img src={BottleIcon} alt="bottle" />}
       >
         {/*<AlbumImages />*/}
-        <p>test</p>
+        <TimelineJune />
       </LeftTimelineElement>
       <RightTimelineElement
         date="May 2018"
@@ -65,6 +66,8 @@ const HarperTimeline = () => {
 export default HarperTimeline;
 
 const Timeline = styled(VerticalTimeline)`
+  //margin-top: 0;
+
   &:before {
     background-color: #f5f5f5;
   }
@@ -73,6 +76,11 @@ const Timeline = styled(VerticalTimeline)`
 const TimelineElement = styled(VerticalTimelineElement)`
   img {
     margin: 0.5rem;
+  }
+
+  .vertical-timeline-element-content {
+    max-height: 500px;
+    overflow: scroll;
   }
 
   .vertical-timeline-element-icon {

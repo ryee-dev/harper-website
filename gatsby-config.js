@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -39,6 +41,19 @@ module.exports = {
         google: {
           families: ['Montserrat'],
         },
+      },
+    },
+    {
+      resolve: `gatsby-source-cloudinary`,
+      options: {
+        cloudName: 'ryee-cloud',
+        apiKey: '486679363458553',
+        apiSecret: 'ngXoPyfG3VhN1ojLOV25rW_XQnU',
+        resourceType: 'image',
+        // type: `type Value`,
+        maxResults: 300,
+        // tags:`fetch image tags?`,
+        // prefix: `abc-xyz/`
       },
     },
   ],

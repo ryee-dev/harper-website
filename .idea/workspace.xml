@@ -2,10 +2,316 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02d37a44-2a3e-4979-9ea6-d4254d0b67bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/a/2a0d7b3d9bc08b1aca1670d3640c4f2263da08ea" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dc4838fa0a27ff834f0d328e7c612df0de322530" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/timeline-events/TimelineJune.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/timeline-events/TimelineMay.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/timeline-events/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0179.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0180.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0181.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0183.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0184.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0186.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0187.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0188.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0189.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0190.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0191.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0192.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0193.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0195.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0198.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0199.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0200.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0202.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0203.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0205.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0206.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0207.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0208.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0209.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0210.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0212.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0214.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0215.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0216.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/april_2018/IMG_0218.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/august_2018/IMG_0330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/august_2018/IMG_0332.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/august_2018/IMG_0333.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/august_2018/IMG_0335.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/august_2018/IMG_0336.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/august_2018/IMG_0337.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/august_2018/IMG_0339.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/august_2018/IMG_0340.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/august_2018/IMG_0342.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/august_2018/IMG_0343.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/august_2018/IMG_0344.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/august_2018/IMG_0345.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/august_2018/IMG_0348.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/august_2018/IMG_0350.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/august_2018/IMG_0351.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/august_2018/IMG_0353.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/august_2018/IMG_0354.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/august_2018/IMG_0355.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/august_2018/IMG_0356.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0008.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0009.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0010.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0011.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0012.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0013.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0014.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0015.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0016.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0019.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0020.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0021.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0022.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0023.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0024.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0025.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0027.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0028.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0029.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0030.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0033.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0034.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0035.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0036.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0037.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0038.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0039.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0040.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0041.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0042.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0043.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0044.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0045.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0046.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0047.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0048.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0049.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0050.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0051.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0052.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0053.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0054.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0055.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0056.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0057.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0058.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0059.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0060.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0061.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0062.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0369.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0403.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/december_2018/IMG_0407.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/february_2019/IMG_0075.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/february_2019/IMG_0076.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/february_2019/IMG_0077.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/february_2019/IMG_0078.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/february_2019/IMG_0079.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/february_2019/IMG_0080.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/february_2019/IMG_0081.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/february_2019/IMG_0082.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/february_2019/IMG_0085.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/february_2019/IMG_0086.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/february_2019/IMG_0087.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/february_2019/IMG_0088.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0032.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0063.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0064.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0065.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0066.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0067.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0068.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0069.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0070.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0071.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0072.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0093.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0094.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0095.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0096.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0097.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0098.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0099.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0102.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0104.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0105.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0106.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0107.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0108.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0109.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0110.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0111.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0112.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0113.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0114.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0115.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0116.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0117.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0118.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0119.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0120.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0121.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0122.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0123.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0124.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0125.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0126.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0127.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0128.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0129.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0130.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0131.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0132.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0133.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0134.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0135.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0136.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0137.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0138.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0139.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0140.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0141.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0142.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0144.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0145.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0146.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0147.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0148.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0149.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0150.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0151.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0152.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0153.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0154.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0155.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0156.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0159.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0160.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0161.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0162.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0164.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0165.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0166.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0167.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0169.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0170.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0171.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0172.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0422.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/january_2019/IMG_0425.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/july_2018/IMG_0312.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/july_2018/IMG_0313.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/july_2018/IMG_0314.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/july_2018/IMG_0315.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/july_2018/IMG_0316.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/july_2018/IMG_0317.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/july_2018/IMG_0318.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/july_2018/IMG_0319.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/july_2018/IMG_0321.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/july_2018/IMG_0322.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/july_2018/IMG_0326.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/july_2018/IMG_0327.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/july_2018/IMG_0328.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0275.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0276.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0278.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0280.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0281.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0282.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0284.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0286.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0287.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0288.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0289.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0290.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0291.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0292.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0293.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0294.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0295.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0296.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0297.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0299.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0300.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0301.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0302.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0305.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0307.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0308.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0309.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/june_2018/IMG_0311.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0219.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0220.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0221.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0222.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0223.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0225.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0226.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0227.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0230.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0233.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0236.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0238.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0239.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0243.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0244.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0246.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0247.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0250.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0252.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0253.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0254.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0255.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0256.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0257.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0258.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0260.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0261.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0262.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0263.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0265.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0266.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0269.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0270.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0271.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0272.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/may_2018/IMG_0273.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/november_2018/IMG_0001.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/november_2018/IMG_0002.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/november_2018/IMG_0003.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/november_2018/IMG_0004.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/november_2018/IMG_0005.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/november_2018/IMG_0006.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/october_2018/IMG_0414.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/october_2018/IMG_0416.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/september_2018/IMG_0365.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/september_2018/IMG_0366.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/september_2018/IMG_0368.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/september_2018/IMG_0369.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/september_2018/IMG_0371.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/september_2018/IMG_0381.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/september_2018/IMG_0384.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/september_2018/IMG_0387.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/september_2018/IMG_0398.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/september_2018/IMG_0402.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/september_2018/IMG_0405.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Timeline.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timeline.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/timeline-events/TimelineApril.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/timeline-events/TimelineApril.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,95 +324,172 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/index.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1674">
-              <caret line="97" column="26" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Timeline.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1512">
-              <caret line="95" column="18" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
-              <folding>
-                <element signature="e#80#119#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/timeline-events/TimelineApril.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1350">
-              <caret line="79" column="7" selection-start-line="79" selection-start-column="7" selection-end-line="79" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/typings.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Header.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gatsby-config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/layout.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Lightbox.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/pages/index.tsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="93">
+                  <caret line="128" column="18" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="18" />
+                  <folding>
+                    <element signature="e#0#31#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/Timeline.tsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1260">
+                  <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+                  <folding>
+                    <element signature="e#80#119#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/Header.tsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="277">
+                  <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="19" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/gatsby-config.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="326">
+                  <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/layout.tsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="198">
+                  <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+                  <folding>
+                    <element signature="e#0#31#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/Lightbox.tsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="288">
+                  <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.env">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="89" selection-start-column="89" selection-end-column="89" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/package.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="414">
+                  <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/HarperMasonry.tsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+                  <folding>
+                    <element signature="e#0#31#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/AlbumImages.tsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="403">
+                  <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+                  <folding>
+                    <element signature="e#62#108#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/timeline-events/TimelineApril.tsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-762">
+                  <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+                  <folding>
+                    <element signature="e#0#40#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/timeline-events/TimelineMay.tsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="178">
+                  <caret line="52" column="25" lean-forward="true" selection-end-line="74" />
+                  <folding>
+                    <element signature="e#0#40#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/timeline-events/index.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="36">
+                  <caret line="2" column="32" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/timeline-events/TimelineJune.tsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="396">
+                  <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#0#40#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -152,13 +535,17 @@
         <option value="$PROJECT_DIR$/src/components/Lightbox.tsx" />
         <option value="$PROJECT_DIR$/src/pages/particles.tsx" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/gatsby-config.js" />
-        <option value="$PROJECT_DIR$/src/components/Header.tsx" />
-        <option value="$PROJECT_DIR$/src/pages/index.tsx" />
         <option value="$PROJECT_DIR$/src/theme/styles.scss" />
-        <option value="$PROJECT_DIR$/src/components/Timeline.tsx" />
         <option value="$PROJECT_DIR$/src/typings.d.ts" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/gatsby-config.js" />
         <option value="$PROJECT_DIR$/src/components/timeline-events/TimelineApril.tsx" />
+        <option value="$PROJECT_DIR$/src/components/timeline-events/TimelineMay.tsx" />
+        <option value="$PROJECT_DIR$/src/components/timeline-events/TimelineJune.tsx" />
+        <option value="$PROJECT_DIR$/src/components/timeline-events/index.ts" />
+        <option value="$PROJECT_DIR$/src/components/Header.tsx" />
+        <option value="$PROJECT_DIR$/src/components/Timeline.tsx" />
+        <option value="$PROJECT_DIR$/src/pages/index.tsx" />
       </list>
     </option>
   </component>
@@ -171,10 +558,9 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1305" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -203,6 +589,13 @@
               <item name="harper-website" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="harper-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="harper-website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="harper-website" type="b2602c69:ProjectViewProjectNode" />
@@ -244,10 +637,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/public/index.html" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.env&#10;/Users/ryee/Desktop/harper-website/public/index.html" />
     <property name="jsgraphql-schema-editor-notification" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -313,17 +713,18 @@
       <workItem from="1550262649895" duration="10065000" />
       <workItem from="1550295424971" duration="4555000" />
       <workItem from="1551925822825" duration="1242000" />
+      <workItem from="1553055701108" duration="7464000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62355000" />
+    <option name="totallyTimeSpent" value="69819000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1714" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20314735" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12935618" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Storybook" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -340,11 +741,11 @@
       <window_info anchor="bottom" id="Bucklescript" order="9" />
       <window_info anchor="bottom" id="SonarLint" order="10" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.32988626" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.23155217" />
+      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.35311872" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="bottom" id="Quokka" order="14" />
-      <window_info anchor="bottom" id="GraphQL" order="15" weight="0.32909784" />
-      <window_info anchor="bottom" id="SVN Repositories" order="16" weight="0.32988626" />
+      <window_info anchor="bottom" id="SVN Repositories" order="15" weight="0.32988626" />
+      <window_info anchor="bottom" id="GraphQL" order="16" weight="0.32897383" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -435,38 +836,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/HarperMasonry.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AlbumImages.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-          <folding>
-            <element signature="e#62#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/particlesjs-config (1).json" />
     <entry file="file://$USER_HOME$/Downloads/particlesjs-config (2).json" />
     <entry file="file://$USER_HOME$/Downloads/particlesjs-config (3).json" />
     <entry file="file://$USER_HOME$/Downloads/particlesjs-config (4).json" />
     <entry file="file://$PROJECT_DIR$/public/index.html" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/theme/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -484,57 +858,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1674">
-          <caret line="97" column="26" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Timeline.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="95" column="18" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
-          <folding>
-            <element signature="e#80#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/typings.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -548,10 +875,121 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="89" selection-start-column="89" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/timeline-events/TimelineApril.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="79" column="7" selection-start-line="79" selection-start-column="7" selection-end-line="79" selection-end-column="7" />
+        <state relative-caret-position="-762">
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/timeline-events/TimelineMay.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="52" column="25" lean-forward="true" selection-end-line="74" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/timeline-events/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AlbumImages.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding>
+            <element signature="e#62#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/HarperMasonry.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Timeline.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+          <folding>
+            <element signature="e#80#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="128" column="18" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/timeline-events/TimelineJune.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

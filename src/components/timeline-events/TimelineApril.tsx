@@ -5,35 +5,32 @@ import { StaticQuery, graphql } from 'gatsby';
 import Masonry from 'react-masonry-component';
 
 const MasonryOptions = {
-  gutter: 5,
-  fitWidth: true,
+  gutter: 1,
+  // fitWidth: true,
   percentPosition: true,
 };
 
-const TimelineApril = () => {
+const TimelineApril: React.FC<{}> = () => {
   // const [isOpen, toggleLightbox] = useState(false);
   // console.log(isOpen);
-  const testClick = () => {
-    console.log('test');
-  };
+  // const testClick = () => {
+  //   console.log('test');
+  // };
+
+  // const { album } = props;
 
   return (
     <StaticQuery
       query={graphql`
         query {
-          aprilImages: allFile(
-            filter: { relativeDirectory: { eq: "assets/images/april_2018" } }
+          septImages: allCloudinaryMedia(
+            filter: { public_id: { regex: "/4.18/" } }
           ) {
             edges {
               node {
-                publicURL
-                name
+                url
+                public_id
                 id
-                childImageSharp {
-                  fluid {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
               }
             }
           }
@@ -46,14 +43,9 @@ const TimelineApril = () => {
             elementType={'div'}
             style={{ width: '100%', margin: '0 auto' }}
           >
-            {data.aprilImages.edges.map(({ node }) => (
+            {data.septImages.edges.map(({ node }) => (
               // @ts-ignore
-              <MasonryImg
-                fluid={node.childImageSharp.fluid}
-                key={node.id}
-                // onClick={testClick()}
-                fadeIn={true}
-              />
+              <img src={node.url} key={node.id} alt={node.public_id} />
             ))}
           </Masonry>
         </MasonryWrapper>
@@ -71,6 +63,12 @@ const MasonryWrapper = styled.div`
 
   div {
     //width: 100% !important;
+  }
+
+  img {
+    width: 28%;
+    max-width: 220px;
+    cursor: pointer;
   }
 `;
 
