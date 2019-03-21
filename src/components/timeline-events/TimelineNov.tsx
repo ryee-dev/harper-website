@@ -17,7 +17,7 @@ const TimelineNov: React.FC<{}> = () => {
       query={graphql`
         query {
           septImages: allCloudinaryMedia(
-            filter: { public_id: { regex: "/8.18/" } }
+            filter: { public_id: { regex: "/11.18/" } }
           ) {
             edges {
               node {

@@ -127,6 +127,13 @@ const Timeline = styled(VerticalTimeline)`
 const TimelineElement = styled(VerticalTimelineElement)`
   img {
     margin: 0.5rem;
+
+    transition: filter 0.2s ease-in-out;
+
+    &:hover {
+      cursor: pointer !important;
+      filter: brightness(120%);
+    }
   }
 
   .thumbnail {
@@ -145,13 +152,6 @@ const TimelineElement = styled(VerticalTimelineElement)`
     @media (min-width: 1440px) {
       width: 45%;
       max-width: 300px;
-    }
-
-    transition: filter 0.2s ease;
-
-    &:hover {
-      cursor: pointer !important;
-      filter: blur(5px);
     }
   }
 

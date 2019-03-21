@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Baby from '../assets/icons/babys-room.svg';
+// import Baby from '../assets/icons/babys-room.svg';
 
 const Header = () => (
   <HeaderWrapper>
@@ -15,7 +15,7 @@ export default Header;
 
 const HeaderWrapper = styled.div`
   //font-family: 'Montserrat', sans-serif;
-  margin-top: 2rem;
+  margin: 4rem 0 3rem 0;
   width: 100%;
   display: flex;
   align-items: center;

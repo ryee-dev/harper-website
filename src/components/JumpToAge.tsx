@@ -56,7 +56,7 @@ const Container = styled.div`
   //border-radius: 2rem;
 
   svg {
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
     z-index: 1;
 
     &:hover {
@@ -66,7 +66,7 @@ const Container = styled.div`
   }
 
   .rowA {
-    padding: 0.4rem 0;
+    padding: 0.6rem 0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -78,7 +78,7 @@ const Container = styled.div`
   }
 
   .rowB {
-    padding: 0.4rem 0;
+    padding: 0.6rem 0;
     width: 100%;
     display: flex;
     align-items: center;

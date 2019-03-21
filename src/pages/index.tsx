@@ -117,7 +117,7 @@ class IndexPage extends React.Component<Props> {
           }}
         />
         <Header />
-        <JumpToAge />
+        {/*<JumpToAge />*/}
         <HarperTimeline />
       </PageWrapper>
     );
