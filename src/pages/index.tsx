@@ -139,7 +139,7 @@ const PageWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   z-index: 10;
-  font-family: 'Graphie', sans-serif;
+  font-family: graphie, sans-serif;
 
   div.bubbles {
     position: fixed;

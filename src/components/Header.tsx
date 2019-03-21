@@ -33,7 +33,7 @@ const HeaderWrapper = styled.div`
     }
 
     &.last {
-      font-family: 'Nouvelle Vague', sans-serif;
+      font-family: nouvelle-vague, sans-serif;
       font-size: 6.4rem;
       opacity: 0.3;
       margin-left: -2rem;
@@ -54,7 +54,7 @@ const HeaderWrapper = styled.div`
       }
       
       &.last {
-        font-family: 'Nouvelle Vague', sans-serif;
+        font-family: nouvelle-vague, sans-serif;
         font-size: 10rem;
         opacity: 0.3;
         margin-left: -3rem;
