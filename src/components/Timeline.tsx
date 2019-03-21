@@ -23,6 +23,7 @@ import {
   TimelineDec,
   TimelineJan,
   TimelineFeb,
+  TimelineMarch,
 } from './timeline-events';
 
 const HarperTimeline = () => {
@@ -53,28 +54,28 @@ const HarperTimeline = () => {
         <RightTimelineElement
           date="July '18"
           iconStyle={{ background: '#f8a978', color: '#fff' }}
-          icon={<NappyIcon />}
+          icon={<NewbornIcon />}
         >
           <TimelineJuly />
         </RightTimelineElement>
         <LeftTimelineElement
           date="August '18"
           iconStyle={{ background: '#a4f6a5', color: '#fff' }}
-          icon={<BottleIcon />}
+          icon={<NappyIcon />}
         >
           <TimelineAugust />
         </LeftTimelineElement>
         <RightTimelineElement
           date="September '18"
           iconStyle={{ background: '#f8a978', color: '#fff' }}
-          icon={<NappyIcon />}
+          icon={<BottleIcon />}
         >
           <TimelineSept />
         </RightTimelineElement>
         <LeftTimelineElement
           date="October '18"
           iconStyle={{ background: '#a4f6a5', color: '#fff' }}
-          icon={<BottleIcon />}
+          icon={<NewbornIcon />}
         >
           <TimelineOct />
         </LeftTimelineElement>
@@ -95,17 +96,25 @@ const HarperTimeline = () => {
         <RightTimelineElement
           date="January '19"
           iconStyle={{ background: '#f8a978', color: '#fff' }}
-          icon={<NappyIcon />}
+          icon={<NewbornIcon />}
         >
           <TimelineJan />
         </RightTimelineElement>
         <LeftTimelineElement
-          date="February 2018"
+          date="February '19"
           iconStyle={{ background: '#a4f6a5', color: '#fff' }}
-          icon={<BottleIcon />}
+          icon={<NappyIcon />}
         >
           <TimelineFeb />
         </LeftTimelineElement>
+        <RightTimelineElement
+          date="March '19"
+          iconStyle={{ background: '#f8a978', color: '#fff' }}
+          icon={<BottleIcon />}
+        >
+          <TimelineMarch />
+        </RightTimelineElement>
+
         <BlankTimelineElement
           iconStyle={{ background: '#8ed6ff', color: '#fff' }}
           icon={<PacifierIcon />}

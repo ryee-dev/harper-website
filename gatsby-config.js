@@ -37,7 +37,7 @@ module.exports = {
         apiSecret: 'ngXoPyfG3VhN1ojLOV25rW_XQnU',
         resourceType: 'image',
         // type: `type Value`,
-        maxResults: 300,
+        maxResults: 500,
         // tags:`fetch image tags?`,
         // prefix: `abc-xyz/`
       },
