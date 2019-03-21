@@ -16,8 +16,7 @@ const AlbumImages = () => (
               }
             }
           }
-        }
-      }
+        } 
     `}
     render={data => <Lightbox albumImages={data.albumImages.edges} />}
   />
