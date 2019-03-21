@@ -21,7 +21,7 @@ const TimelineJune: React.FC<{}> = () => {
           ) {
             edges {
               node {
-                url
+                secure_url
                 public_id
                 id
               }
@@ -38,7 +38,7 @@ const TimelineJune: React.FC<{}> = () => {
           >
             {data.septImages.edges.map(({ node }) => (
               // @ts-ignore
-              <img src={node.url} key={node.id} alt={node.public_id} />
+              <img src={node.secure_url} key={node.id} alt={node.public_id} />
             ))}
           </Masonry>
         </MasonryWrapper>
