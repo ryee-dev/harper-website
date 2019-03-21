@@ -14,15 +14,6 @@ const MasonryOptions = {
 };
 
 const TimelineApril: React.FC<{}> = () => {
-  const [isOpen, toggleLightbox] = useState(false);
-  // console.log(isOpen);
-
-  const testClick = () => {
-    console.log(isOpen);
-  };
-
-  // const { album } = props;
-
   return (
     <StaticQuery
       query={graphql`
