@@ -9732,6 +9732,11 @@ react-masonry-component@^6.2.1:
     masonry-layout "^4.2.0"
     prop-types "^15.5.8"
 
+react-medium-image-zoom@^3.0.15:
+  version "3.0.15"
+  resolved "https://registry.yarnpkg.com/react-medium-image-zoom/-/react-medium-image-zoom-3.0.15.tgz#c566c08225cff9c7c6454fe66b570609ffa2991d"
+  integrity sha512-OJc6XXmSFr0ApniFdCL1TliP6BG9eQabkcahWA9CbHha3y2IJXo1aAsQs7Irc2Wcek/N9QCeAY4wTitoMg5iLg==
+
 react-particles-js@^2.4.2:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/react-particles-js/-/react-particles-js-2.5.1.tgz#337ea9f9220bb33ca4b5ed3efa766efbac74011f"

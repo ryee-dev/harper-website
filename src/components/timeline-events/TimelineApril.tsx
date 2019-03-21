@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Masonry from 'react-masonry-component';
+import ImageZoom from 'react-medium-image-zoom';
+
+import { MasonryStyle } from '../Timeline';
 
 const MasonryOptions = {
   gutter: 1,
@@ -11,11 +14,12 @@ const MasonryOptions = {
 };
 
 const TimelineApril: React.FC<{}> = () => {
-  // const [isOpen, toggleLightbox] = useState(false);
+  const [isOpen, toggleLightbox] = useState(false);
   // console.log(isOpen);
-  // const testClick = () => {
-  //   console.log('test');
-  // };
+
+  const testClick = () => {
+    console.log(isOpen);
+  };
 
   // const { album } = props;
 
@@ -41,11 +45,18 @@ const TimelineApril: React.FC<{}> = () => {
           <Masonry
             options={MasonryOptions}
             elementType={'div'}
-            style={{ width: '100%', margin: '0 auto' }}
+            style={MasonryStyle}
           >
             {data.septImages.edges.map(({ node }) => (
               // @ts-ignore
-              <img src={node.secure_url} key={node.id} alt={node.public_id} />
+              <ImageZoom
+                image={{
+                  src: `${node.secure_url}`,
+                  alt: `${node.public_id}`,
+                  className: 'thumbnail',
+                }}
+                key={node.id}
+              />
             ))}
           </Masonry>
         </MasonryWrapper>
@@ -58,17 +69,23 @@ export default TimelineApril;
 
 const MasonryWrapper = styled.div`
   width: 100% !important;
-  overflow-y: scroll;
+
   margin: 0 auto;
 
-  div {
-    //width: 100% !important;
-  }
+  //div {
+  //  //width: 100% !important;
+  //  overflow-y: scroll;
+  //  max-height: 400px;
+  //}
 
   img {
     width: 28%;
     max-width: 220px;
     cursor: pointer;
+  }
+
+  .vertical-timeline-element-date {
+    padding: 0;
   }
 `;
 

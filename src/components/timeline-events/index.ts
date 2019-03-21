@@ -1,3 +1,11 @@
 export { default as TimelineApril } from './TimelineApril';
 export { default as TimelineMay } from './TimelineMay';
 export { default as TimelineJune } from './TimelineJune';
+export { default as TimelineJuly } from './TimelineJuly';
+export { default as TimelineAugust } from './TimelineAugust';
+export { default as TimelineSept } from './TimelineSept';
+export { default as TimelineOct } from './TimelineOct';
+export { default as TimelineNov } from './TimelineNov';
+export { default as TimelineDec } from './TimelineDec';
+export { default as TimelineJan } from './TimelineJan';
+export { default as TimelineFeb } from './TimelineFeb';

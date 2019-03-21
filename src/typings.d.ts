@@ -7,3 +7,4 @@ declare module 'react-vertical-timeline-component';
 declare module 'react-pose';
 declare module 'gatsby';
 declare module 'react-particles-js';
+declare module 'react-medium-image-zoom';

@@ -14,7 +14,19 @@ import {
 } from '../assets/icons';
 // import Image from './Image';
 // import TimelineApril from './timeline-events/TimelineApril';
-import { TimelineApril, TimelineMay, TimelineJune } from './timeline-events';
+import {
+  TimelineApril,
+  TimelineMay,
+  TimelineJune,
+  TimelineJuly,
+  TimelineAugust,
+  TimelineSept,
+  TimelineOct,
+  TimelineNov,
+  TimelineDec,
+  TimelineJan,
+  TimelineFeb,
+} from './timeline-events';
 
 const HarperTimeline = () => {
   return (
@@ -38,22 +50,63 @@ const HarperTimeline = () => {
         iconStyle={{ background: '#a4f6a5', color: '#fff' }}
         icon={<img src={BottleIcon} alt="bottle" />}
       >
-        {/*<AlbumImages />*/}
         <TimelineJune />
       </LeftTimelineElement>
       <RightTimelineElement
-        date="May 2018"
+        date="July 2018"
         iconStyle={{ background: '#f8a978', color: '#fff' }}
         icon={<img src={NappyIcon} alt="nappy" />}
       >
-        <p>test</p>
+        <TimelineJuly />
       </RightTimelineElement>
       <LeftTimelineElement
-        date="June 2018"
+        date="August 2018"
         iconStyle={{ background: '#a4f6a5', color: '#fff' }}
         icon={<img src={BottleIcon} alt="bottle" />}
       >
-        <p>test</p>
+        <TimelineAugust />
+      </LeftTimelineElement>
+      <RightTimelineElement
+        date="September 2018"
+        iconStyle={{ background: '#f8a978', color: '#fff' }}
+        icon={<img src={NappyIcon} alt="nappy" />}
+      >
+        <TimelineSept />
+      </RightTimelineElement>
+      <LeftTimelineElement
+        date="October 2018"
+        iconStyle={{ background: '#a4f6a5', color: '#fff' }}
+        icon={<img src={BottleIcon} alt="bottle" />}
+      >
+        <TimelineOct />
+      </LeftTimelineElement>
+      <RightTimelineElement
+        date="November 2018"
+        iconStyle={{ background: '#f8a978', color: '#fff' }}
+        icon={<img src={NappyIcon} alt="nappy" />}
+      >
+        <TimelineNov />
+      </RightTimelineElement>
+      <LeftTimelineElement
+        date="December 2018"
+        iconStyle={{ background: '#a4f6a5', color: '#fff' }}
+        icon={<img src={BottleIcon} alt="bottle" />}
+      >
+        <TimelineDec />
+      </LeftTimelineElement>
+      <RightTimelineElement
+        date="January 2018"
+        iconStyle={{ background: '#f8a978', color: '#fff' }}
+        icon={<img src={NappyIcon} alt="nappy" />}
+      >
+        <TimelineJan />
+      </RightTimelineElement>
+      <LeftTimelineElement
+        date="February 2018"
+        iconStyle={{ background: '#a4f6a5', color: '#fff' }}
+        icon={<img src={BottleIcon} alt="bottle" />}
+      >
+        <TimelineFeb />
       </LeftTimelineElement>
       <BlankTimelineElement
         iconStyle={{ background: '#8ed6ff', color: '#fff' }}
@@ -78,9 +131,31 @@ const TimelineElement = styled(VerticalTimelineElement)`
     margin: 0.5rem;
   }
 
+  .thumbnail {
+    width: 92%;
+
+    @media (min-width: 768px) {
+      width: 28%;
+      max-width: 220px;
+    }
+
+    @media (min-width: 1024px) {
+      width: 30%;
+      max-width: 300px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 45%;
+      max-width: 300px;
+    }
+  }
+
   .vertical-timeline-element-content {
-    max-height: 500px;
-    overflow: scroll;
+    //max-height: 400px !important;
+    padding: 1rem 1rem 0 1rem;
+    @media (min-width: 1440px) {
+      padding: 1rem;
+    }
   }
 
   .vertical-timeline-element-icon {
@@ -104,28 +179,22 @@ const LeftTimelineElement = styled(TimelineElement)`
       border-left-color: #f3f8ff !important;
     }
   }
-
-  div {
-    width: 100%;
-    max-height: 500px;
-    margin-left: -5px;
-  }
 `;
 
 const RightTimelineElement = styled(TimelineElement)`
   .vertical-timeline-element-content {
     background-color: #ffefe0;
     box-shadow: 10px -5px 50px 0 rgba(0, 0, 0, 0.4);
+
+    &:before {
+      border-right-color: #ffefe0 !important;
+    }
   }
 
-  div {
-    //max-height: 500px;
-    //margin-left: -5px;
-  }
-
-  img {
-    //max-height: 500px;
-  }
+  //div {
+  //  max-height: 500px;
+  //  margin-left: -5px;
+  //}
 `;
 
 const BlankTimelineElement = styled(TimelineElement)`
@@ -133,3 +202,10 @@ const BlankTimelineElement = styled(TimelineElement)`
     box-shadow: none;
   }
 `;
+
+export const MasonryStyle = {
+  width: '100%',
+  margin: '0 auto',
+  maxHeight: '395px',
+  overflow: 'scroll',
+};

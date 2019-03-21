@@ -1,5 +1,4 @@
 import React from 'react';
-import Img from 'gatsby-image';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Masonry from 'react-masonry-component';
@@ -12,13 +11,13 @@ const MasonryOptions = {
   percentPosition: true,
 };
 
-const TimelineMay: React.FC<{}> = () => {
+const TimelineJuly: React.FC<{}> = () => {
   return (
     <StaticQuery
       query={graphql`
         query {
           septImages: allCloudinaryMedia(
-            filter: { public_id: { regex: "/5.18/" } }
+            filter: { public_id: { regex: "/7.18/" } }
           ) {
             edges {
               node {
@@ -55,12 +54,18 @@ const TimelineMay: React.FC<{}> = () => {
   );
 };
 
-export default TimelineMay;
+export default TimelineJuly;
 
 const MasonryWrapper = styled.div`
   width: 100% !important;
-  //overflow-y: scroll;
+  overflow-y: scroll;
   margin: 0 auto;
+
+  div {
+    //width: 100% !important;
+    //max-height: 500px;
+    //overflow-y: scroll;
+  }
 
   img {
     width: 28%;
@@ -69,10 +74,10 @@ const MasonryWrapper = styled.div`
   }
 `;
 
-const MasonryImg = styled(Img)`
-  max-width: 220px;
-  //margin-bottom: 5px;
-  img {
-    cursor: pointer;
-  }
-`;
+// const MasonryImg = styled(Img)`
+//   max-width: 220px;
+//   //margin-bottom: 5px;
+//   img {
+//     cursor: pointer;
+//   }
+// `;

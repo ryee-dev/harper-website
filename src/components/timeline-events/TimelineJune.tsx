@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import Img from 'gatsby-image';
+import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Masonry from 'react-masonry-component';
+import { MasonryStyle } from '../Timeline';
+import ImageZoom from 'react-medium-image-zoom';
 
 const MasonryOptions = {
   gutter: 1,
@@ -11,7 +12,6 @@ const MasonryOptions = {
 };
 
 const TimelineJune: React.FC<{}> = () => {
-
   return (
     <StaticQuery
       query={graphql`
@@ -34,11 +34,18 @@ const TimelineJune: React.FC<{}> = () => {
           <Masonry
             options={MasonryOptions}
             elementType={'div'}
-            style={{ width: '100%', margin: '0 auto' }}
+            style={MasonryStyle}
           >
             {data.septImages.edges.map(({ node }) => (
               // @ts-ignore
-              <img src={node.secure_url} key={node.id} alt={node.public_id} />
+              <ImageZoom
+                image={{
+                  src: `${node.secure_url}`,
+                  alt: `${node.public_id}`,
+                  className: 'thumbnail',
+                }}
+                key={node.id}
+              />
             ))}
           </Masonry>
         </MasonryWrapper>
@@ -54,10 +61,6 @@ const MasonryWrapper = styled.div`
   overflow-y: scroll;
   margin: 0 auto;
 
-  div {
-    //width: 100% !important;
-  }
-
   img {
     width: 28%;
     max-width: 220px;
@@ -65,10 +68,10 @@ const MasonryWrapper = styled.div`
   }
 `;
 
-const MasonryImg = styled(Img)`
-  max-width: 220px;
-  //margin-bottom: 5px;
-  img {
-    cursor: pointer;
-  }
-`;
+// const MasonryImg = styled(Img)`
+//   max-width: 220px;
+//   //margin-bottom: 5px;
+//   img {
+//     cursor: pointer;
+//   }
+// `;

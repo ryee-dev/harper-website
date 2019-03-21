@@ -128,9 +128,8 @@ const PageWrapper = styled.div`
   .vertical-timeline {
     margin-top: 0;
   }
-
-  position: relative;
   padding: 2rem 4rem;
+  position: relative;
   box-sizing: border-box;
   width: 100%;
   display: flex;
@@ -158,6 +157,8 @@ const PageWrapper = styled.div`
   }
 
   @media (max-width: 500px) {
+    padding: 2rem 1rem;
+
     h1 {
       font-size: 1.6rem;
     }
