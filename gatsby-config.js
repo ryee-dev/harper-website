@@ -35,11 +35,7 @@ module.exports = {
         cloudName: 'ryee-cloud',
         apiKey: '486679363458553',
         apiSecret: 'ngXoPyfG3VhN1ojLOV25rW_XQnU',
-        resourceType: 'image',
-        // type: `type Value`,
         maxResults: 500,
-        // tags:`fetch image tags?`,
-        // prefix: `abc-xyz/`
       },
     },
     {
