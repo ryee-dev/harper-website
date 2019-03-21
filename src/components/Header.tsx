@@ -30,6 +30,7 @@ const HeaderWrapper = styled.div`
       margin-right: -2rem;
       letter-spacing: 4px;
       font-weight: 300;
+      padding-left: 1.4rem;
     }
 
     &.last {
@@ -39,6 +40,7 @@ const HeaderWrapper = styled.div`
       margin-left: -2rem;
       margin-top: -2rem;
       overflow: visible;
+      padding-right: 1.4rem;
     }
   }
   
