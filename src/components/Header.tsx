@@ -33,7 +33,7 @@ const HeaderWrapper = styled.div`
     }
 
     &.last {
-      font-family: 'PilGi', cursive;
+      font-family: 'Nouvelle Vague', sans-serif;
       font-size: 6.4rem;
       opacity: 0.3;
       margin-left: -2rem;
@@ -47,18 +47,18 @@ const HeaderWrapper = styled.div`
     h1 {
       &.first {
         font-size: 4rem;
-      margin-top: -1rem;
-      margin-right: -3rem;
-      letter-spacing: 4px;
-      font-weight: 300;
+        margin-top: -1rem;
+        margin-right: -3rem;
+        letter-spacing: 4px;
+        font-weight: 300;
       }
       
       &.last {
-        font-family: 'PilGi', cursive;
-      font-size: 10rem;
-      opacity: 0.3;
-      margin-left: -3rem;
-      margin-top: -2rem;
+        font-family: 'Nouvelle Vague', sans-serif;
+        font-size: 10rem;
+        opacity: 0.3;
+        margin-left: -3rem;
+        margin-top: -2rem;
       }
     }
   }
