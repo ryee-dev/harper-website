@@ -1,17 +1,22 @@
-import React, { useState } from 'react';
-import Img from 'gatsby-image';
+import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Masonry from 'react-masonry-component';
-import ImageZoom from 'react-medium-image-zoom';
 
 import { MasonryStyle } from '../Timeline';
+import MediumLightbox from '../MediumLightbox';
 
 const MasonryOptions = {
   gutter: 1,
   // fitWidth: true,
   percentPosition: true,
 };
+
+// const Img = posed(ImageZoom)({
+//   hoverable: true,
+//   init: { filter: 'blur(2px)' },
+//   hover: { filter: 'blur(0px)' },
+// });
 
 const TimelineApril: React.FC<{}> = () => {
   return (
@@ -26,6 +31,8 @@ const TimelineApril: React.FC<{}> = () => {
                 secure_url
                 public_id
                 id
+                width
+                height
               }
             }
           }
@@ -40,13 +47,11 @@ const TimelineApril: React.FC<{}> = () => {
           >
             {data.septImages.edges.map(({ node }) => (
               // @ts-ignore
-              <ImageZoom
-                image={{
-                  src: `${node.secure_url}`,
-                  alt: `${node.public_id}`,
-                  className: 'thumbnail',
-                }}
+              <MediumLightbox
+                src={node.secure_url}
                 key={node.id}
+                imgHeight={node.height}
+                imgWidth={node.width}
               />
             ))}
           </Masonry>
@@ -57,6 +62,31 @@ const TimelineApril: React.FC<{}> = () => {
 };
 
 export default TimelineApril;
+
+{
+  /*<Img*/
+}
+{
+  /*  image={{*/
+}
+{
+  /*    src: `${node.secure_url}`,*/
+}
+{
+  /*    alt: `${node.public_id}`,*/
+}
+{
+  /*    className: 'thumbnail',*/
+}
+{
+  /*  }}*/
+}
+{
+  /*  key={node.id}*/
+}
+{
+  /*/>*/
+}
 
 const MasonryWrapper = styled.div`
   width: 100% !important;
@@ -77,13 +107,5 @@ const MasonryWrapper = styled.div`
 
   .vertical-timeline-element-date {
     padding: 0;
-  }
-`;
-
-const MasonryImg = styled(Img)`
-  max-width: 220px;
-  //margin-bottom: 5px;
-  img {
-    cursor: pointer;
   }
 `;
