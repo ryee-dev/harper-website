@@ -25,7 +25,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         typekit: {
-          id: 'yfb8knl',
+          id: 'grb0fol',
         },
       },
     },
