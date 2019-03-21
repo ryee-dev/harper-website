@@ -2,6 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import HarperTimeline from '../components/Timeline';
 import Header from '../components/Header';
+import JumpToAge from '../components/JumpToAge';
 import Particles from 'react-particles-js';
 
 interface Props {}
@@ -116,6 +117,7 @@ class IndexPage extends React.Component<Props> {
           }}
         />
         <Header />
+        <JumpToAge />
         <HarperTimeline />
       </PageWrapper>
     );
@@ -137,7 +139,7 @@ const PageWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   z-index: 10;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Graphie', sans-serif;
 
   div.bubbles {
     position: fixed;

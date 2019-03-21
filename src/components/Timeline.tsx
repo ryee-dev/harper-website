@@ -12,8 +12,6 @@ import {
   BottleIcon,
   PacifierIcon,
 } from '../assets/icons';
-// import Image from './Image';
-// import TimelineApril from './timeline-events/TimelineApril';
 import {
   TimelineApril,
   TimelineMay,
@@ -27,90 +25,91 @@ import {
   TimelineJan,
   TimelineFeb,
 } from './timeline-events';
+import posed from 'react-pose';
 
 const HarperTimeline = () => {
   return (
     <Timeline>
       <LeftTimelineElement
-        date="April 2018"
+        date="April '18"
         iconStyle={{ background: '#f1eb9a', color: '#fff' }}
-        icon={<img src={NewbornIcon} alt="newborn" />}
+        icon={<NewbornIcon />}
       >
         <TimelineApril />
       </LeftTimelineElement>
       <RightTimelineElement
-        date="May 2018"
+        date="May '18"
         iconStyle={{ background: '#f8a978', color: '#fff' }}
-        icon={<img src={NappyIcon} alt="nappy" />}
+        icon={<NappyIcon />}
       >
         <TimelineMay />
       </RightTimelineElement>
       <LeftTimelineElement
-        date="June 2018"
+        date="June '18"
         iconStyle={{ background: '#a4f6a5', color: '#fff' }}
-        icon={<img src={BottleIcon} alt="bottle" />}
+        icon={<BottleIcon />}
       >
         <TimelineJune />
       </LeftTimelineElement>
       <RightTimelineElement
-        date="July 2018"
+        date="July '18"
         iconStyle={{ background: '#f8a978', color: '#fff' }}
-        icon={<img src={NappyIcon} alt="nappy" />}
+        icon={<NappyIcon />}
       >
         <TimelineJuly />
       </RightTimelineElement>
       <LeftTimelineElement
-        date="August 2018"
+        date="August '18"
         iconStyle={{ background: '#a4f6a5', color: '#fff' }}
-        icon={<img src={BottleIcon} alt="bottle" />}
+        icon={<BottleIcon />}
       >
         <TimelineAugust />
       </LeftTimelineElement>
       <RightTimelineElement
-        date="September 2018"
+        date="September '18"
         iconStyle={{ background: '#f8a978', color: '#fff' }}
-        icon={<img src={NappyIcon} alt="nappy" />}
+        icon={<NappyIcon />}
       >
         <TimelineSept />
       </RightTimelineElement>
       <LeftTimelineElement
-        date="October 2018"
+        date="October '18"
         iconStyle={{ background: '#a4f6a5', color: '#fff' }}
-        icon={<img src={BottleIcon} alt="bottle" />}
+        icon={<BottleIcon />}
       >
         <TimelineOct />
       </LeftTimelineElement>
       <RightTimelineElement
-        date="November 2018"
+        date="November '18"
         iconStyle={{ background: '#f8a978', color: '#fff' }}
-        icon={<img src={NappyIcon} alt="nappy" />}
+        icon={<NappyIcon />}
       >
         <TimelineNov />
       </RightTimelineElement>
       <LeftTimelineElement
-        date="December 2018"
+        date="December '18"
         iconStyle={{ background: '#a4f6a5', color: '#fff' }}
-        icon={<img src={BottleIcon} alt="bottle" />}
+        icon={<BottleIcon />}
       >
         <TimelineDec />
       </LeftTimelineElement>
       <RightTimelineElement
-        date="January 2018"
+        date="January '19"
         iconStyle={{ background: '#f8a978', color: '#fff' }}
-        icon={<img src={NappyIcon} alt="nappy" />}
+        icon={<NappyIcon />}
       >
         <TimelineJan />
       </RightTimelineElement>
       <LeftTimelineElement
         date="February 2018"
         iconStyle={{ background: '#a4f6a5', color: '#fff' }}
-        icon={<img src={BottleIcon} alt="bottle" />}
+        icon={<BottleIcon />}
       >
         <TimelineFeb />
       </LeftTimelineElement>
       <BlankTimelineElement
         iconStyle={{ background: '#8ed6ff', color: '#fff' }}
-        icon={<img src={PacifierIcon} alt="pacifier" />}
+        icon={<PacifierIcon />}
       />
     </Timeline>
   );
@@ -147,6 +146,13 @@ const TimelineElement = styled(VerticalTimelineElement)`
       width: 45%;
       max-width: 300px;
     }
+
+    transition: filter 0.2s ease;
+
+    &:hover {
+      cursor: pointer !important;
+      filter: blur(5px);
+    }
   }
 
   .vertical-timeline-element-content {
@@ -155,6 +161,10 @@ const TimelineElement = styled(VerticalTimelineElement)`
     @media (min-width: 1440px) {
       padding: 1rem;
     }
+
+    .vertical-timeline-element-date {
+      font-family: 'Como', sans-serif;
+    }
   }
 
   .vertical-timeline-element-icon {
@@ -162,8 +172,15 @@ const TimelineElement = styled(VerticalTimelineElement)`
     align-items: center;
     justify-content: center;
 
-    img {
-      max-height: 45px;
+    svg {
+      //max-height: 45px;
+      //width: 40px !important;
+      height: auto !important;
+      width: auto !important;
+      //height: 40px !important;
+      top: auto;
+      left: auto;
+      margin: 0;
     }
   }
 `;
@@ -181,6 +198,7 @@ const LeftTimelineElement = styled(TimelineElement)`
 
     @media (min-width: 1440px) {
       &:before {
+        border-right-color: transparent !important;
         border-left-color: #f3f8ff !important;
       }
     }
@@ -198,7 +216,8 @@ const RightTimelineElement = styled(TimelineElement)`
 
     @media (min-width: 1440px) {
       &:before {
-        border-left-color: #ffefe0 !important;
+        border-right-color: #ffefe0 !important;
+        border-left-color: transparent !important;
       }
     }
   }
