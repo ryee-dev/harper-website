@@ -173,6 +173,7 @@ const TimelineElement = styled(VerticalTimelineElement)`
     justify-content: center;
 
     svg {
+      transform: scale(0.6);
       //max-height: 45px;
       //width: 40px !important;
       height: auto !important;
@@ -181,6 +182,10 @@ const TimelineElement = styled(VerticalTimelineElement)`
       top: auto;
       left: auto;
       margin: 0;
+      
+      @media (min-width: 1024px) {
+        transform: scale(1);
+      }
     }
   }
 `;
