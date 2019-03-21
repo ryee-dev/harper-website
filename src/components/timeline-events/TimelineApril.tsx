@@ -2,9 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Masonry from 'react-masonry-component';
+import ImageZoom from 'react-medium-image-zoom'
 
 import { MasonryStyle } from '../Timeline';
-import MediumLightbox from '../MediumLightbox';
+// import MediumLightbox from '../MediumLightbox';
 
 const MasonryOptions = {
   gutter: 1,
@@ -47,11 +48,13 @@ const TimelineApril: React.FC<{}> = () => {
           >
             {data.septImages.edges.map(({ node }) => (
               // @ts-ignore
-              <MediumLightbox
-                src={node.secure_url}
+              <ImageZoom
+                image={{
+                  src: `${node.secure_url}`,
+                  alt: `${node.id}`,
+                  className: 'thumbnail'
+                }}
                 key={node.id}
-                imgHeight={node.height}
-                imgWidth={node.width}
               />
             ))}
           </Masonry>
