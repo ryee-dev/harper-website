@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02d37a44-2a3e-4979-9ea6-d4254d0b67bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/timeline-events/TimelineAugust.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/timeline-events/TimelineDec.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/timeline-events/TimelineFeb.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/timeline-events/TimelineJan.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/timeline-events/TimelineJuly.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/timeline-events/TimelineNov.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/timeline-events/TimelineOct.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/timeline-events/TimelineSept.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HarperMasonry.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Timeline.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timeline.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/timeline-events/TimelineApril.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/timeline-events/TimelineApril.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/timeline-events/TimelineJune.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/timeline-events/TimelineJune.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/timeline-events/TimelineMay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/timeline-events/TimelineMay.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/timeline-events/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/timeline-events/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typings.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typings.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,8 +32,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/Timeline.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="134" column="13" selection-start-line="134" selection-start-column="13" selection-end-line="134" selection-end-column="13" />
+                <state relative-caret-position="167">
+                  <caret line="178" column="24" selection-start-line="178" selection-start-column="24" selection-end-line="178" selection-end-column="24" />
                   <folding>
                     <element signature="e#80#119#0" expanded="true" />
                   </folding>
@@ -72,7 +54,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/timeline-events/TimelineApril.tsx">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="183">
-                  <caret line="55" column="41" lean-forward="true" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="41" />
+                  <caret line="55" column="41" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="41" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
                   </folding>
@@ -132,7 +114,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/Lightbox.tsx">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="288">
-                  <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+                  <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
@@ -467,12 +449,12 @@
       <workItem from="1550262649895" duration="10065000" />
       <workItem from="1550295424971" duration="4555000" />
       <workItem from="1551925822825" duration="1242000" />
-      <workItem from="1553055701108" duration="16693000" />
+      <workItem from="1553055701108" duration="17520000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79048000" />
+    <option name="totallyTimeSpent" value="79875000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1080" extended-state="6" />
@@ -680,7 +662,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/timeline-events/TimelineApril.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
-          <caret line="55" column="41" lean-forward="true" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="41" />
+          <caret line="55" column="41" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="41" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -730,7 +712,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/Lightbox.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -813,8 +795,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Timeline.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="134" column="13" selection-start-line="134" selection-start-column="13" selection-end-line="134" selection-end-column="13" />
+        <state relative-caret-position="167">
+          <caret line="178" column="24" selection-start-line="178" selection-start-column="24" selection-end-line="178" selection-end-column="24" />
           <folding>
             <element signature="e#80#119#0" expanded="true" />
           </folding>

@@ -120,7 +120,6 @@ export default HarperTimeline;
 
 const Timeline = styled(VerticalTimeline)`
   //margin-top: 0;
-
   &:before {
     background-color: #f5f5f5;
   }
@@ -174,9 +173,16 @@ const LeftTimelineElement = styled(TimelineElement)`
     background-color: #f3f8ff;
     box-shadow: -10px -5px 50px 0 rgba(0, 0, 0, 0.4);
     border-radius: 20px;
+    //border-right-color: #f3f8ff !important;
 
     &:before {
-      border-left-color: #f3f8ff !important;
+      border-right-color: #f3f8ff !important;
+    }
+
+    @media (min-width: 1440px) {
+      &:before {
+        border-left-color: #f3f8ff !important;
+      }
     }
   }
 `;
@@ -188,6 +194,12 @@ const RightTimelineElement = styled(TimelineElement)`
 
     &:before {
       border-right-color: #ffefe0 !important;
+    }
+
+    @media (min-width: 1440px) {
+      &:before {
+        border-left-color: #ffefe0 !important;
+      }
     }
   }
 
