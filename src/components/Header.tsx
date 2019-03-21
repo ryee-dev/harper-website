@@ -38,6 +38,7 @@ const HeaderWrapper = styled.div`
       opacity: 0.3;
       margin-left: -2rem;
       margin-top: -2rem;
+      overflow: visible;
     }
   }
   
