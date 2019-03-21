@@ -24,8 +24,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        google: {
-          families: ['Montserrat'],
+        typekit: {
+          id: 'yfb8knl',
         },
       },
     },
