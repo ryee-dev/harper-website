@@ -7,6 +7,7 @@ import ImageZoom from 'react-medium-image-zoom'
 import { MasonryStyle } from '../Timeline';
 // import MediumLightbox from '../MediumLightbox';
 
+
 const MasonryOptions = {
   gutter: 1,
   // fitWidth: true,

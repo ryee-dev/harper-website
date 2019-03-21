@@ -4,6 +4,7 @@ export { ReactComponent as NewbornIcon } from './baby.svg';
 export { ReactComponent as NappyIcon } from './nappy.svg';
 export { ReactComponent as BottleIcon } from './baby-bottle.svg';
 export { ReactComponent as PacifierIcon } from './pacifier.svg';
+export { ReactComponent as Zero } from './0.svg';
 export { ReactComponent as One } from './1.svg';
 export { ReactComponent as Two } from './2.svg';
 export { ReactComponent as Three } from './3.svg';

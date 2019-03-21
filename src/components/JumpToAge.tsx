@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {
+  Zero,
   One,
   Two,
   Three,
@@ -18,14 +19,15 @@ const JumpToAge = () => {
   return (
     <Container>
       <div className="rowA">
+        <Zero />
         <One />
         <Two />
         <Three />
         <Four />
         <Five />
-        <Six />
       </div>
       <div className="rowB">
+        <Six />
         <Seven />
         <Eight />
         <Nine />
@@ -55,6 +57,7 @@ const Container = styled.div`
 
   svg {
     transition: transform 0.3s ease;
+    z-index: 1;
 
     &:hover {
       transform: scale(1.1) rotate(15deg);
@@ -75,7 +78,8 @@ const Container = styled.div`
   }
 
   .rowB {
-    width: 85%;
+    padding: 0.4rem 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;

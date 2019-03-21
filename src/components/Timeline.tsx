@@ -1,5 +1,4 @@
 import React from 'react';
-// import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import {
   VerticalTimeline,
@@ -25,93 +24,94 @@ import {
   TimelineJan,
   TimelineFeb,
 } from './timeline-events';
-import posed from 'react-pose';
 
 const HarperTimeline = () => {
   return (
-    <Timeline>
-      <LeftTimelineElement
-        date="April '18"
-        iconStyle={{ background: '#f1eb9a', color: '#fff' }}
-        icon={<NewbornIcon />}
-      >
-        <TimelineApril />
-      </LeftTimelineElement>
-      <RightTimelineElement
-        date="May '18"
-        iconStyle={{ background: '#f8a978', color: '#fff' }}
-        icon={<NappyIcon />}
-      >
-        <TimelineMay />
-      </RightTimelineElement>
-      <LeftTimelineElement
-        date="June '18"
-        iconStyle={{ background: '#a4f6a5', color: '#fff' }}
-        icon={<BottleIcon />}
-      >
-        <TimelineJune />
-      </LeftTimelineElement>
-      <RightTimelineElement
-        date="July '18"
-        iconStyle={{ background: '#f8a978', color: '#fff' }}
-        icon={<NappyIcon />}
-      >
-        <TimelineJuly />
-      </RightTimelineElement>
-      <LeftTimelineElement
-        date="August '18"
-        iconStyle={{ background: '#a4f6a5', color: '#fff' }}
-        icon={<BottleIcon />}
-      >
-        <TimelineAugust />
-      </LeftTimelineElement>
-      <RightTimelineElement
-        date="September '18"
-        iconStyle={{ background: '#f8a978', color: '#fff' }}
-        icon={<NappyIcon />}
-      >
-        <TimelineSept />
-      </RightTimelineElement>
-      <LeftTimelineElement
-        date="October '18"
-        iconStyle={{ background: '#a4f6a5', color: '#fff' }}
-        icon={<BottleIcon />}
-      >
-        <TimelineOct />
-      </LeftTimelineElement>
-      <RightTimelineElement
-        date="November '18"
-        iconStyle={{ background: '#f8a978', color: '#fff' }}
-        icon={<NappyIcon />}
-      >
-        <TimelineNov />
-      </RightTimelineElement>
-      <LeftTimelineElement
-        date="December '18"
-        iconStyle={{ background: '#a4f6a5', color: '#fff' }}
-        icon={<BottleIcon />}
-      >
-        <TimelineDec />
-      </LeftTimelineElement>
-      <RightTimelineElement
-        date="January '19"
-        iconStyle={{ background: '#f8a978', color: '#fff' }}
-        icon={<NappyIcon />}
-      >
-        <TimelineJan />
-      </RightTimelineElement>
-      <LeftTimelineElement
-        date="February 2018"
-        iconStyle={{ background: '#a4f6a5', color: '#fff' }}
-        icon={<BottleIcon />}
-      >
-        <TimelineFeb />
-      </LeftTimelineElement>
-      <BlankTimelineElement
-        iconStyle={{ background: '#8ed6ff', color: '#fff' }}
-        icon={<PacifierIcon />}
-      />
-    </Timeline>
+    <>
+      <Timeline>
+        <LeftTimelineElement
+          date="April '18"
+          iconStyle={{ background: '#f1eb9a', color: '#fff' }}
+          icon={<NewbornIcon />}
+        >
+          <TimelineApril />
+        </LeftTimelineElement>
+        <RightTimelineElement
+          date="May '18"
+          iconStyle={{ background: '#f8a978', color: '#fff' }}
+          icon={<NappyIcon />}
+        >
+          <TimelineMay />
+        </RightTimelineElement>
+        <LeftTimelineElement
+          date="June '18"
+          iconStyle={{ background: '#a4f6a5', color: '#fff' }}
+          icon={<BottleIcon />}
+        >
+          <TimelineJune />
+        </LeftTimelineElement>
+        <RightTimelineElement
+          date="July '18"
+          iconStyle={{ background: '#f8a978', color: '#fff' }}
+          icon={<NappyIcon />}
+        >
+          <TimelineJuly />
+        </RightTimelineElement>
+        <LeftTimelineElement
+          date="August '18"
+          iconStyle={{ background: '#a4f6a5', color: '#fff' }}
+          icon={<BottleIcon />}
+        >
+          <TimelineAugust />
+        </LeftTimelineElement>
+        <RightTimelineElement
+          date="September '18"
+          iconStyle={{ background: '#f8a978', color: '#fff' }}
+          icon={<NappyIcon />}
+        >
+          <TimelineSept />
+        </RightTimelineElement>
+        <LeftTimelineElement
+          date="October '18"
+          iconStyle={{ background: '#a4f6a5', color: '#fff' }}
+          icon={<BottleIcon />}
+        >
+          <TimelineOct />
+        </LeftTimelineElement>
+        <RightTimelineElement
+          date="November '18"
+          iconStyle={{ background: '#f8a978', color: '#fff' }}
+          icon={<NappyIcon />}
+        >
+          <TimelineNov />
+        </RightTimelineElement>
+        <LeftTimelineElement
+          date="December '18"
+          iconStyle={{ background: '#a4f6a5', color: '#fff' }}
+          icon={<BottleIcon />}
+        >
+          <TimelineDec />
+        </LeftTimelineElement>
+        <RightTimelineElement
+          date="January '19"
+          iconStyle={{ background: '#f8a978', color: '#fff' }}
+          icon={<NappyIcon />}
+        >
+          <TimelineJan />
+        </RightTimelineElement>
+        <LeftTimelineElement
+          date="February 2018"
+          iconStyle={{ background: '#a4f6a5', color: '#fff' }}
+          icon={<BottleIcon />}
+        >
+          <TimelineFeb />
+        </LeftTimelineElement>
+        <BlankTimelineElement
+          iconStyle={{ background: '#8ed6ff', color: '#fff' }}
+          icon={<PacifierIcon />}
+        />
+      </Timeline>
+    </>
   );
 };
 
