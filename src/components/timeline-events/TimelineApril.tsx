@@ -2,11 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Masonry from 'react-masonry-component';
-import ImageZoom from 'react-medium-image-zoom'
+import ImageZoom from 'react-medium-image-zoom';
 
 import { MasonryStyle } from '../Timeline';
 // import MediumLightbox from '../MediumLightbox';
-
 
 const MasonryOptions = {
   gutter: 1,
@@ -53,7 +52,7 @@ const TimelineApril: React.FC<{}> = () => {
                 image={{
                   src: `${node.secure_url}`,
                   alt: `${node.id}`,
-                  className: 'thumbnail'
+                  className: 'thumbnail',
                 }}
                 key={node.id}
               />
@@ -67,34 +66,8 @@ const TimelineApril: React.FC<{}> = () => {
 
 export default TimelineApril;
 
-{
-  /*<Img*/
-}
-{
-  /*  image={{*/
-}
-{
-  /*    src: `${node.secure_url}`,*/
-}
-{
-  /*    alt: `${node.public_id}`,*/
-}
-{
-  /*    className: 'thumbnail',*/
-}
-{
-  /*  }}*/
-}
-{
-  /*  key={node.id}*/
-}
-{
-  /*/>*/
-}
-
 const MasonryWrapper = styled.div`
   width: 100% !important;
-
   margin: 0 auto;
 
   //div {
@@ -107,6 +80,10 @@ const MasonryWrapper = styled.div`
     width: 28%;
     max-width: 220px;
     cursor: pointer;
+
+    &.thumbnail {
+      //cursor: pointer;
+    }
   }
 
   .vertical-timeline-element-date {

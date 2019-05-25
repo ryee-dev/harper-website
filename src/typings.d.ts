@@ -9,3 +9,5 @@ declare module 'gatsby';
 declare module 'react-particles-js';
 declare module 'react-medium-image-zoom';
 declare module 'react-pose';
+declare module '@rooks/use-window-size';
+// declare module 'react-scroll-to';

@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Element } from 'react-scroll';
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -26,7 +28,7 @@ import {
   TimelineMarch,
 } from './timeline-events';
 
-const HarperTimeline = () => {
+const HarperTimeline: React.FC<{}> = () => {
   return (
     <>
       <Timeline>
@@ -35,84 +37,108 @@ const HarperTimeline = () => {
           iconStyle={{ background: '#f1eb9a', color: '#fff' }}
           icon={<NewbornIcon />}
         >
-          <TimelineApril />
+          <Element name="April18">
+            <TimelineApril />
+          </Element>
         </LeftTimelineElement>
         <RightTimelineElement
           date="May '18"
           iconStyle={{ background: '#f8a978', color: '#fff' }}
           icon={<NappyIcon />}
         >
-          <TimelineMay />
+          <Element name="May18">
+            <TimelineMay />
+          </Element>
         </RightTimelineElement>
         <LeftTimelineElement
           date="June '18"
           iconStyle={{ background: '#a4f6a5', color: '#fff' }}
           icon={<BottleIcon />}
         >
-          <TimelineJune />
+          <Element name="June18">
+            <TimelineJune />
+          </Element>
         </LeftTimelineElement>
         <RightTimelineElement
           date="July '18"
           iconStyle={{ background: '#f8a978', color: '#fff' }}
           icon={<NewbornIcon />}
         >
-          <TimelineJuly />
+          <Element name="July18">
+            <TimelineJuly />
+          </Element>
         </RightTimelineElement>
         <LeftTimelineElement
           date="August '18"
           iconStyle={{ background: '#a4f6a5', color: '#fff' }}
           icon={<NappyIcon />}
         >
-          <TimelineAugust />
+          <Element name="August18">
+            <TimelineAugust />
+          </Element>
         </LeftTimelineElement>
         <RightTimelineElement
           date="September '18"
           iconStyle={{ background: '#f8a978', color: '#fff' }}
           icon={<BottleIcon />}
         >
-          <TimelineSept />
+          <Element name="September18">
+            <TimelineSept />
+          </Element>
         </RightTimelineElement>
         <LeftTimelineElement
           date="October '18"
           iconStyle={{ background: '#a4f6a5', color: '#fff' }}
           icon={<NewbornIcon />}
         >
-          <TimelineOct />
+          <Element name="October18">
+            <TimelineOct />
+          </Element>
         </LeftTimelineElement>
         <RightTimelineElement
           date="November '18"
           iconStyle={{ background: '#f8a978', color: '#fff' }}
           icon={<NappyIcon />}
         >
-          <TimelineNov />
+          <Element name="November18">
+            <TimelineNov />
+          </Element>
         </RightTimelineElement>
         <LeftTimelineElement
           date="December '18"
           iconStyle={{ background: '#a4f6a5', color: '#fff' }}
           icon={<BottleIcon />}
         >
-          <TimelineDec />
+          <Element name="December18">
+            <TimelineDec />
+          </Element>
         </LeftTimelineElement>
         <RightTimelineElement
           date="January '19"
           iconStyle={{ background: '#f8a978', color: '#fff' }}
           icon={<NewbornIcon />}
         >
-          <TimelineJan />
+          <Element name="January19">
+            <TimelineJan />
+          </Element>
         </RightTimelineElement>
         <LeftTimelineElement
           date="February '19"
           iconStyle={{ background: '#a4f6a5', color: '#fff' }}
           icon={<NappyIcon />}
         >
-          <TimelineFeb />
+          <Element name="February19">
+            <TimelineFeb />
+          </Element>
         </LeftTimelineElement>
         <RightTimelineElement
           date="March '19"
           iconStyle={{ background: '#f8a978', color: '#fff' }}
           icon={<BottleIcon />}
         >
-          <TimelineMarch />
+          <Element name="March19">
+            <TimelineMarch />
+          </Element>
         </RightTimelineElement>
 
         <BlankTimelineElement
@@ -137,10 +163,10 @@ const TimelineElement = styled(VerticalTimelineElement)`
   img {
     margin: 0.5rem;
 
-    transition: filter 0.2s ease-in-out;
+    transition: filter 0.1s ease-in-out;
 
     &:hover {
-      cursor: pointer !important;
+      //cursor: pointer !important;
       filter: brightness(120%);
     }
   }
@@ -191,7 +217,7 @@ const TimelineElement = styled(VerticalTimelineElement)`
       top: auto;
       left: auto;
       margin: 0;
-      
+
       @media (min-width: 1024px) {
         transform: scale(1);
       }
@@ -252,5 +278,6 @@ export const MasonryStyle = {
   width: '100%',
   margin: '0 auto',
   maxHeight: '395px',
-  overflow: 'scroll',
+  overflowY: 'auto',
+  overflowX: 'hidden',
 };

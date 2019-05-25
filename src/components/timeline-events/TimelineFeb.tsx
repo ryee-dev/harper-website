@@ -58,7 +58,6 @@ export default TimelineFeb;
 
 const MasonryWrapper = styled.div`
   width: 100% !important;
-  overflow-y: scroll;
   margin: 0 auto;
 
   div {

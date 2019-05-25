@@ -1,24 +1,25 @@
-import * as React from 'react';
+import React from 'react';
 import styled from 'styled-components';
+import useWindowSize from '@rooks/use-window-size';
 import HarperTimeline from '../components/Timeline';
 import Header from '../components/Header';
-// import JumpToAge from '../components/JumpToAge';
+import JumpToAge from '../components/JumpToAge';
 import BgParticles from '../components/BgParticles';
 
-interface Props {}
+// interface Props {}
 
-class IndexPage extends React.Component<Props> {
-  render() {
-    return (
-      <PageWrapper>
-        <BgParticles />
-        <Header />
-        {/*<JumpToAge />*/}
-        <HarperTimeline />
-      </PageWrapper>
-    );
-  }
-}
+const IndexPage = () => {
+  const { innerWidth } = useWindowSize();
+
+  return (
+    <PageWrapper>
+      <BgParticles />
+      <Header />
+      {innerWidth > 1024 && <JumpToAge />}
+      <HarperTimeline />
+    </PageWrapper>
+  );
+};
 
 export default IndexPage;
 

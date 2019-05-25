@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from 'gatsby-image';
+// import Img from 'gatsby-image';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Masonry from 'react-masonry-component';
@@ -59,7 +59,6 @@ export default TimelineMay;
 
 const MasonryWrapper = styled.div`
   width: 100% !important;
-  //overflow-y: scroll;
   margin: 0 auto;
 
   img {
@@ -69,10 +68,10 @@ const MasonryWrapper = styled.div`
   }
 `;
 
-const MasonryImg = styled(Img)`
-  max-width: 220px;
-  //margin-bottom: 5px;
-  img {
-    cursor: pointer;
-  }
-`;
+// const MasonryImg = styled(Img)`
+//   max-width: 220px;
+//   //margin-bottom: 5px;
+//   img {
+//     cursor: pointer;
+//   }
+// `;
