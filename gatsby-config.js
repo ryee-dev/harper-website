@@ -9,9 +9,9 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-eslint`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-typescript`,
-    `gatsby-plugin-tslint`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     {
@@ -49,5 +49,13 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/ // See below to configure properly
+        }
+      }
+    }
   ],
 };
