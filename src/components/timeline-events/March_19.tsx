@@ -11,7 +11,7 @@ const MasonryOptions = {
   percentPosition: true,
 };
 
-const TimelineMarch: React.FC<{}> = () => {
+const March_19: React.FC<{}> = () => {
   return (
     <StaticQuery
       query={graphql`
@@ -54,7 +54,7 @@ const TimelineMarch: React.FC<{}> = () => {
   );
 };
 
-export default TimelineMarch;
+export default March_19;
 
 const MasonryWrapper = styled.div`
   width: 100% !important;

@@ -11,13 +11,13 @@ const MasonryOptions = {
   percentPosition: true,
 };
 
-const TimelineJan: React.FC<{}> = () => {
+const February_19: React.FC<{}> = () => {
   return (
     <StaticQuery
       query={graphql`
         query {
           septImages: allCloudinaryMedia(
-            filter: { public_id: { regex: "/1.19/" } }
+            filter: { public_id: { regex: "/2.19/" } }
           ) {
             edges {
               node {
@@ -54,7 +54,7 @@ const TimelineJan: React.FC<{}> = () => {
   );
 };
 
-export default TimelineJan;
+export default February_19;
 
 const MasonryWrapper = styled.div`
   width: 100% !important;

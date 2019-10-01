@@ -2,28 +2,29 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Masonry from 'react-masonry-component';
-import { MasonryStyle } from '../Timeline';
 import ImageZoom from 'react-medium-image-zoom';
+import { MasonryStyle } from '../Timeline';
 
 const MasonryOptions = {
   gutter: 1,
-  // fitWidth: true,
   percentPosition: true,
 };
 
-const TimelineFeb: React.FC<{}> = () => {
+const April_18: React.FC<{}> = () => {
   return (
     <StaticQuery
       query={graphql`
         query {
           septImages: allCloudinaryMedia(
-            filter: { public_id: { regex: "/2.19/" } }
+            filter: { public_id: { regex: "/4.18/" } }
           ) {
             edges {
               node {
                 secure_url
                 public_id
                 id
+                width
+                height
               }
             }
           }
@@ -41,7 +42,7 @@ const TimelineFeb: React.FC<{}> = () => {
               <ImageZoom
                 image={{
                   src: `${node.secure_url}`,
-                  alt: `${node.public_id}`,
+                  alt: `${node.id}`,
                   className: 'thumbnail',
                 }}
                 key={node.id}
@@ -54,29 +55,19 @@ const TimelineFeb: React.FC<{}> = () => {
   );
 };
 
-export default TimelineFeb;
+export default April_18;
 
 const MasonryWrapper = styled.div`
   width: 100% !important;
   margin: 0 auto;
-
-  div {
-    //width: 100% !important;
-    //max-height: 500px;
-    //overflow-y: scroll;
-  }
-
+  
   img {
     width: 28%;
     max-width: 220px;
     cursor: pointer;
   }
-`;
 
-// const MasonryImg = styled(Img)`
-//   max-width: 220px;
-//   //margin-bottom: 5px;
-//   img {
-//     cursor: pointer;
-//   }
-// `;
+  .vertical-timeline-element-date {
+    padding: 0;
+  }
+`;

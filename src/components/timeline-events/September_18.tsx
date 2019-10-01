@@ -2,10 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Masonry from 'react-masonry-component';
-import ImageZoom from 'react-medium-image-zoom';
-
 import { MasonryStyle } from '../Timeline';
-// import MediumLightbox from '../MediumLightbox';
+import ImageZoom from 'react-medium-image-zoom';
 
 const MasonryOptions = {
   gutter: 1,
@@ -13,27 +11,19 @@ const MasonryOptions = {
   percentPosition: true,
 };
 
-// const Img = posed(ImageZoom)({
-//   hoverable: true,
-//   init: { filter: 'blur(2px)' },
-//   hover: { filter: 'blur(0px)' },
-// });
-
-const TimelineApril: React.FC<{}> = () => {
+const September_18: React.FC<{}> = () => {
   return (
     <StaticQuery
       query={graphql`
         query {
           septImages: allCloudinaryMedia(
-            filter: { public_id: { regex: "/4.18/" } }
+            filter: { public_id: { regex: "/9.18/" } }
           ) {
             edges {
               node {
                 secure_url
                 public_id
                 id
-                width
-                height
               }
             }
           }
@@ -51,7 +41,7 @@ const TimelineApril: React.FC<{}> = () => {
               <ImageZoom
                 image={{
                   src: `${node.secure_url}`,
-                  alt: `${node.id}`,
+                  alt: `${node.public_id}`,
                   className: 'thumbnail',
                 }}
                 key={node.id}
@@ -64,29 +54,29 @@ const TimelineApril: React.FC<{}> = () => {
   );
 };
 
-export default TimelineApril;
+export default September_18;
 
 const MasonryWrapper = styled.div`
   width: 100% !important;
   margin: 0 auto;
 
-  //div {
-  //  //width: 100% !important;
-  //  overflow-y: scroll;
-  //  max-height: 400px;
-  //}
+  div {
+    //width: 100% !important;
+    //max-height: 500px;
+    //overflow-y: scroll;
+  }
 
   img {
     width: 28%;
     max-width: 220px;
     cursor: pointer;
-
-    &.thumbnail {
-      //cursor: pointer;
-    }
-  }
-
-  .vertical-timeline-element-date {
-    padding: 0;
   }
 `;
+
+// const MasonryImg = styled(Img)`
+//   max-width: 220px;
+//   //margin-bottom: 5px;
+//   img {
+//     cursor: pointer;
+//   }
+// `;

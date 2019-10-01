@@ -1,29 +1,30 @@
-import React from 'react';
+import * as React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Masonry from 'react-masonry-component';
-import { MasonryStyle } from '../Timeline';
 import ImageZoom from 'react-medium-image-zoom';
+import { MasonryStyle } from '../Timeline';
 
 const MasonryOptions = {
   gutter: 1,
-  // fitWidth: true,
   percentPosition: true,
 };
 
-const TimelineSept: React.FC<{}> = () => {
+const September_19: React.FC<{}> = () => {
   return (
     <StaticQuery
       query={graphql`
         query {
-          septImages: allCloudinaryMedia(
-            filter: { public_id: { regex: "/9.18/" } }
+          images: allCloudinaryMedia(
+            filter: { public_id: { regex: "/9.19/" } }
           ) {
             edges {
               node {
                 secure_url
                 public_id
                 id
+                width
+                height
               }
             }
           }
@@ -36,12 +37,12 @@ const TimelineSept: React.FC<{}> = () => {
             elementType={'div'}
             style={MasonryStyle}
           >
-            {data.septImages.edges.map(({ node }) => (
+            {data.images.edges.map(({ node }) => (
               // @ts-ignore
               <ImageZoom
                 image={{
                   src: `${node.secure_url}`,
-                  alt: `${node.public_id}`,
+                  alt: `${node.id}`,
                   className: 'thumbnail',
                 }}
                 key={node.id}
@@ -54,29 +55,19 @@ const TimelineSept: React.FC<{}> = () => {
   );
 };
 
-export default TimelineSept;
+export default September_19;
 
 const MasonryWrapper = styled.div`
   width: 100% !important;
   margin: 0 auto;
-
-  div {
-    //width: 100% !important;
-    //max-height: 500px;
-    //overflow-y: scroll;
-  }
-
+  
   img {
     width: 28%;
     max-width: 220px;
     cursor: pointer;
   }
-`;
 
-// const MasonryImg = styled(Img)`
-//   max-width: 220px;
-//   //margin-bottom: 5px;
-//   img {
-//     cursor: pointer;
-//   }
-// `;
+  .vertical-timeline-element-date {
+    padding: 0;
+  }
+`;
