@@ -14,34 +14,29 @@ const April_18: React.FC<{}> = () => {
   return (
     <StaticQuery
       query={graphql`
-        query {
-          septImages: allCloudinaryMedia(
-            filter: { public_id: { regex: "/4.18/" } }
-          ) {
-            edges {
-              node {
-                secure_url
-                public_id
-                id
-                width
-                height
-              }
+      query PhotoQuery {
+        april18: allS3ImageAsset(filter: {Key: {regex: "/2018/4.18/"}}) {
+          edges {
+            node {
+              Key
+              id
             }
           }
         }
-      `}
-      render={data => (
+      }
+    `}
+      render={(data: any) => (
         <MasonryWrapper>
           <Masonry
             options={MasonryOptions}
             elementType={'div'}
             style={MasonryStyle}
           >
-            {data.septImages.edges.map(({ node }) => (
+            {data.april18.edges.map(({ node }: any) => (
               // @ts-ignore
               <ImageZoom
                 image={{
-                  src: `${node.secure_url}`,
+                  src: `https://harperwebsite.s3-us-west-1.amazonaws.com/${node.Key}`,
                   alt: `${node.id}`,
                   className: 'thumbnail',
                 }}

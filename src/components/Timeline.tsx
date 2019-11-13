@@ -14,18 +14,8 @@ import {
   PacifierIcon,
 } from '../assets/icons';
 import {
-  TimelineApril,
-  TimelineMay,
-  TimelineJune,
-  TimelineJuly,
-  TimelineAugust,
-  TimelineSept,
-  TimelineOct,
-  TimelineNov,
-  TimelineDec,
-  TimelineJan,
-  TimelineFeb,
-  TimelineMarch,
+  // eslint-disable-next-line @typescript-eslint/camelcase,max-len
+  April_18, April_19, August_18, August_19, December_18, February_19, January_19, July_18, July_19, June_18, June_19, March_19, May_18, May_19, November_18, October_18, October_19, September_18, September_19,
 } from './timeline-events';
 
 const HarperTimeline: React.FC<{}> = () => {
@@ -38,7 +28,7 @@ const HarperTimeline: React.FC<{}> = () => {
           icon={<NewbornIcon />}
         >
           <Element name="April18">
-            <TimelineApril />
+            <April_18 />
           </Element>
         </LeftTimelineElement>
         <RightTimelineElement
@@ -47,7 +37,7 @@ const HarperTimeline: React.FC<{}> = () => {
           icon={<NappyIcon />}
         >
           <Element name="May18">
-            <TimelineMay />
+            <May_18 />
           </Element>
         </RightTimelineElement>
         <LeftTimelineElement
@@ -56,7 +46,7 @@ const HarperTimeline: React.FC<{}> = () => {
           icon={<BottleIcon />}
         >
           <Element name="June18">
-            <TimelineJune />
+            <June_18 />
           </Element>
         </LeftTimelineElement>
         <RightTimelineElement
@@ -65,7 +55,7 @@ const HarperTimeline: React.FC<{}> = () => {
           icon={<NewbornIcon />}
         >
           <Element name="July18">
-            <TimelineJuly />
+            <July_18 />
           </Element>
         </RightTimelineElement>
         <LeftTimelineElement
@@ -74,7 +64,7 @@ const HarperTimeline: React.FC<{}> = () => {
           icon={<NappyIcon />}
         >
           <Element name="August18">
-            <TimelineAugust />
+            <August_18 />
           </Element>
         </LeftTimelineElement>
         <RightTimelineElement
@@ -83,7 +73,7 @@ const HarperTimeline: React.FC<{}> = () => {
           icon={<BottleIcon />}
         >
           <Element name="September18">
-            <TimelineSept />
+            <September_18 />
           </Element>
         </RightTimelineElement>
         <LeftTimelineElement
@@ -92,7 +82,7 @@ const HarperTimeline: React.FC<{}> = () => {
           icon={<NewbornIcon />}
         >
           <Element name="October18">
-            <TimelineOct />
+            <October_18 />
           </Element>
         </LeftTimelineElement>
         <RightTimelineElement
@@ -101,7 +91,7 @@ const HarperTimeline: React.FC<{}> = () => {
           icon={<NappyIcon />}
         >
           <Element name="November18">
-            <TimelineNov />
+            <November_18 />
           </Element>
         </RightTimelineElement>
         <LeftTimelineElement
@@ -110,7 +100,7 @@ const HarperTimeline: React.FC<{}> = () => {
           icon={<BottleIcon />}
         >
           <Element name="December18">
-            <TimelineDec />
+            <December_18 />
           </Element>
         </LeftTimelineElement>
         <RightTimelineElement
@@ -119,7 +109,7 @@ const HarperTimeline: React.FC<{}> = () => {
           icon={<NewbornIcon />}
         >
           <Element name="January19">
-            <TimelineJan />
+            <January_19 />
           </Element>
         </RightTimelineElement>
         <LeftTimelineElement
@@ -128,7 +118,7 @@ const HarperTimeline: React.FC<{}> = () => {
           icon={<NappyIcon />}
         >
           <Element name="February19">
-            <TimelineFeb />
+            <February_19 />
           </Element>
         </LeftTimelineElement>
         <RightTimelineElement
@@ -137,10 +127,73 @@ const HarperTimeline: React.FC<{}> = () => {
           icon={<BottleIcon />}
         >
           <Element name="March19">
-            <TimelineMarch />
+            <March_19 />
           </Element>
         </RightTimelineElement>
 
+        <LeftTimelineElement
+          date="April '19"
+          iconStyle={{ background: '#a4f6a5', color: '#fff' }}
+          icon={<NappyIcon />}
+        >
+          <Element name="April19">
+            <April_19 />
+          </Element>
+        </LeftTimelineElement>
+        <RightTimelineElement
+          date="May '19"
+          iconStyle={{ background: '#f8a978', color: '#fff' }}
+          icon={<BottleIcon />}
+        >
+          <Element name="May19">
+            <May_19 />
+          </Element>
+        </RightTimelineElement>
+        <LeftTimelineElement
+          date="June '19"
+          iconStyle={{ background: '#a4f6a5', color: '#fff' }}
+          icon={<NappyIcon />}
+        >
+          <Element name="June19">
+            <June_19 />
+          </Element>
+        </LeftTimelineElement>
+        <RightTimelineElement
+          date="July '19"
+          iconStyle={{ background: '#f8a978', color: '#fff' }}
+          icon={<BottleIcon />}
+        >
+          <Element name="July19">
+            <July_19 />
+          </Element>
+        </RightTimelineElement>
+        <LeftTimelineElement
+          date="August '19"
+          iconStyle={{ background: '#a4f6a5', color: '#fff' }}
+          icon={<NappyIcon />}
+        >
+          <Element name="August19">
+            <August_19 />
+          </Element>
+        </LeftTimelineElement>
+        <RightTimelineElement
+          date="September '19"
+          iconStyle={{ background: '#f8a978', color: '#fff' }}
+          icon={<BottleIcon />}
+        >
+          <Element name="Sept19">
+            <September_19 />
+          </Element>
+        </RightTimelineElement>
+        <LeftTimelineElement
+          date="October '19"
+          iconStyle={{ background: '#a4f6a5', color: '#fff' }}
+          icon={<NappyIcon />}
+        >
+          <Element name="Oct19">
+            <October_19 />
+          </Element>
+        </LeftTimelineElement>
         <BlankTimelineElement
           iconStyle={{ background: '#8ed6ff', color: '#fff' }}
           icon={<PacifierIcon />}
@@ -166,7 +219,7 @@ const TimelineElement = styled(VerticalTimelineElement)`
     transition: filter 0.1s ease-in-out;
 
     &:hover {
-      //cursor: pointer !important;
+  // cursor: pointer !important;
       filter: brightness(120%);
     }
   }
@@ -191,7 +244,7 @@ const TimelineElement = styled(VerticalTimelineElement)`
   }
 
   .vertical-timeline-element-content {
-    //max-height: 400px !important;
+  // max-height: 400px !important;
     padding: 1rem 1rem 0 1rem;
     @media (min-width: 1440px) {
       padding: 1rem;
@@ -209,11 +262,11 @@ const TimelineElement = styled(VerticalTimelineElement)`
 
     svg {
       transform: scale(0.6);
-      //max-height: 45px;
-      //width: 40px !important;
+  // max-height: 45px;
+  // width: 40px !important;
       height: auto !important;
       width: auto !important;
-      //height: 40px !important;
+  // height: 40px !important;
       top: auto;
       left: auto;
       margin: 0;
@@ -230,7 +283,7 @@ const LeftTimelineElement = styled(TimelineElement)`
     background-color: #f3f8ff;
     box-shadow: -10px -5px 50px 0 rgba(0, 0, 0, 0.4);
     border-radius: 20px;
-    //border-right-color: #f3f8ff !important;
+  // border-right-color: #f3f8ff !important;
 
     &:before {
       border-right-color: #f3f8ff !important;
@@ -262,10 +315,10 @@ const RightTimelineElement = styled(TimelineElement)`
     }
   }
 
-  //div {
+  // div {
   //  max-height: 500px;
   //  margin-left: -5px;
-  //}
+  // }
 `;
 
 const BlankTimelineElement = styled(TimelineElement)`
